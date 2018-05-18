@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classevidence_1_1models_1_1_evidence" kind="class" prot="public">
+    <compoundname>evidence::models::Evidence</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Model</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_evidence_1a5f4b9ce1cfa945ac57f83d859d257218" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.Evidence::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <initializer>= models.IntegerField(null=True, blank=True, default=&quot;&quot;, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="11" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_evidence_1aa8dad5ce34e9091d93d64007021055c5" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.Evidence::reference</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="12" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_evidence_1a8d75cc06a8e0db4b43ba78b9a4a91c95" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.Evidence::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="13" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_evidence_1ae45188ae954468a3e2258896a55ad771" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.Evidence::qr_code</definition>
+        <argsstring></argsstring>
+        <name>qr_code</name>
+        <initializer>= models.BooleanField(default=False, blank=True, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="14" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_evidence_1a83019a49a308f0b53be743ec6fc37a8c" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.Evidence::qr_code_text</definition>
+        <argsstring></argsstring>
+        <name>qr_code_text</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="15" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_evidence_1a9b24cefa0bf7e9413e92626437db627b" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.Evidence::comment</definition>
+        <argsstring></argsstring>
+        <name>comment</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="16" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_evidence_1a83dcf6e26af916531689aa1283f1ebdb" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.Evidence::originator</definition>
+        <argsstring></argsstring>
+        <name>originator</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="17" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_evidence_1a547a23c14f46a4d7392df4f05bb43b29" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.Evidence::evidence_bag_number</definition>
+        <argsstring></argsstring>
+        <name>evidence_bag_number</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="18" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_evidence_1a33636c3f03136d2e53e1ceab7ecf305b" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.Evidence::location</definition>
+        <argsstring></argsstring>
+        <name>location</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="19" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_evidence_1abdb64d07c17ee3123794381bec981721" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.Evidence::current_status</definition>
+        <argsstring></argsstring>
+        <name>current_status</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="20" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_evidence_1ab66fdf6133a208edbdcd677f10205520" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.Evidence::date_added</definition>
+        <argsstring></argsstring>
+        <name>date_added</name>
+        <initializer>= models.DateTimeField(auto_now=True, null=True, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="21" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_evidence_1aa06266e24c3d7cc195f4f2e7bd8c9ee7" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.Evidence::retention_start_date</definition>
+        <argsstring></argsstring>
+        <name>retention_start_date</name>
+        <initializer>= models.DateTimeField(auto_now=True, null=True, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="22" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_evidence_1a548e21bde796d073ac6152d43712acd9" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.Evidence::retention_date</definition>
+        <argsstring></argsstring>
+        <name>retention_date</name>
+        <initializer>= models.DateTimeField(auto_now=True, null=True, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="23" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_evidence_1a35fa6bbd05b49a2965c9548af56cfd94" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.Evidence::retention_reminder_sent</definition>
+        <argsstring></argsstring>
+        <name>retention_reminder_sent</name>
+        <initializer>= models.BooleanField(default=False, blank=True, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="24" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_evidence_1a8ba6b858eb5d5f97a9dd58e2c393eea5" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.Evidence::case</definition>
+        <argsstring></argsstring>
+        <name>case</name>
+        <initializer>= models.ForeignKey(<ref refid="classcase_1_1models_1_1_case" kindref="compound">Case</ref>, on_delete=models.SET_NULL, blank=True, null=True, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="27" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="77">
+        <label>evidence.models.Evidence</label>
+        <link refid="classevidence_1_1models_1_1_evidence"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="79">
+        <label>evidence.models.Evidence</label>
+        <link refid="classevidence_1_1models_1_1_evidence"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="9" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="9" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classevidence_1_1models_1_1_evidence_1a8ba6b858eb5d5f97a9dd58e2c393eea5" prot="public" virt="non-virtual"><scope>evidence::models::Evidence</scope><name>case</name></member>
+      <member refid="classevidence_1_1models_1_1_evidence_1a9b24cefa0bf7e9413e92626437db627b" prot="public" virt="non-virtual"><scope>evidence::models::Evidence</scope><name>comment</name></member>
+      <member refid="classevidence_1_1models_1_1_evidence_1abdb64d07c17ee3123794381bec981721" prot="public" virt="non-virtual"><scope>evidence::models::Evidence</scope><name>current_status</name></member>
+      <member refid="classevidence_1_1models_1_1_evidence_1ab66fdf6133a208edbdcd677f10205520" prot="public" virt="non-virtual"><scope>evidence::models::Evidence</scope><name>date_added</name></member>
+      <member refid="classevidence_1_1models_1_1_evidence_1a547a23c14f46a4d7392df4f05bb43b29" prot="public" virt="non-virtual"><scope>evidence::models::Evidence</scope><name>evidence_bag_number</name></member>
+      <member refid="classevidence_1_1models_1_1_evidence_1a5f4b9ce1cfa945ac57f83d859d257218" prot="public" virt="non-virtual"><scope>evidence::models::Evidence</scope><name>id</name></member>
+      <member refid="classevidence_1_1models_1_1_evidence_1a33636c3f03136d2e53e1ceab7ecf305b" prot="public" virt="non-virtual"><scope>evidence::models::Evidence</scope><name>location</name></member>
+      <member refid="classevidence_1_1models_1_1_evidence_1a83dcf6e26af916531689aa1283f1ebdb" prot="public" virt="non-virtual"><scope>evidence::models::Evidence</scope><name>originator</name></member>
+      <member refid="classevidence_1_1models_1_1_evidence_1ae45188ae954468a3e2258896a55ad771" prot="public" virt="non-virtual"><scope>evidence::models::Evidence</scope><name>qr_code</name></member>
+      <member refid="classevidence_1_1models_1_1_evidence_1a83019a49a308f0b53be743ec6fc37a8c" prot="public" virt="non-virtual"><scope>evidence::models::Evidence</scope><name>qr_code_text</name></member>
+      <member refid="classevidence_1_1models_1_1_evidence_1aa8dad5ce34e9091d93d64007021055c5" prot="public" virt="non-virtual"><scope>evidence::models::Evidence</scope><name>reference</name></member>
+      <member refid="classevidence_1_1models_1_1_evidence_1a548e21bde796d073ac6152d43712acd9" prot="public" virt="non-virtual"><scope>evidence::models::Evidence</scope><name>retention_date</name></member>
+      <member refid="classevidence_1_1models_1_1_evidence_1a35fa6bbd05b49a2965c9548af56cfd94" prot="public" virt="non-virtual"><scope>evidence::models::Evidence</scope><name>retention_reminder_sent</name></member>
+      <member refid="classevidence_1_1models_1_1_evidence_1aa06266e24c3d7cc195f4f2e7bd8c9ee7" prot="public" virt="non-virtual"><scope>evidence::models::Evidence</scope><name>retention_start_date</name></member>
+      <member refid="classevidence_1_1models_1_1_evidence_1a8d75cc06a8e0db4b43ba78b9a4a91c95" prot="public" virt="non-virtual"><scope>evidence::models::Evidence</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

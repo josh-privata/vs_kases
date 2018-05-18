@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classcase_1_1models_1_1_case" kind="class" prot="public">
+    <compoundname>case::models::Case</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Model</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_1ae88f4c3c12f6b75a6bfe398ab07c74ac" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.Case::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <initializer>= models.IntegerField(null=True, blank=True, default=&quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="10" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_1af893de4eb3981b01cb77f4b219af7943" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.Case::case_name</definition>
+        <argsstring></argsstring>
+        <name>case_name</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="11" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_1a8ecdca80db22ee2f4345abafa5d583e7" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.Case::reference</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="12" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_1a3ec3fd18fdfdc8e81e08c62fefaff2e4" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.Case::currentStatus</definition>
+        <argsstring></argsstring>
+        <name>currentStatus</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="13" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_1a795ed71fec785084947ece3299644f74" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.Case::private</definition>
+        <argsstring></argsstring>
+        <name>private</name>
+        <initializer>= models.BooleanField(default=False, blank=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="14" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_1a61b93b6a72dcfc785c3601148d003eb1" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.Case::background</definition>
+        <argsstring></argsstring>
+        <name>background</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="15" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_1ace914932117f0b4fcfa4b89e286a3c0e" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.Case::location</definition>
+        <argsstring></argsstring>
+        <name>location</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="16" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_1a46d955ad720ad4d170f565e19a2933c5" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.Case::creation_date</definition>
+        <argsstring></argsstring>
+        <name>creation_date</name>
+        <initializer>= models.DateTimeField(auto_now=True, null=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="17" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_1af0123b25773fc9b752dedf147c4f9dd5" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.Case::classification</definition>
+        <argsstring></argsstring>
+        <name>classification</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="18" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_1a6a32b6de99a65c90fc75417c2faccf12" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.Case::justification</definition>
+        <argsstring></argsstring>
+        <name>justification</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="19" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_1ad6b44c2548a8751aebf50dbb9b13017c" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.Case::case_type</definition>
+        <argsstring></argsstring>
+        <name>case_type</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="20" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_1a6bb11442f7ff286a973228c2d66a76ba" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.Case::case_priority</definition>
+        <argsstring></argsstring>
+        <name>case_priority</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="21" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_1a580711fbe0ab0b7840a09c70d5c37beb" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.Case::case_priority_colour</definition>
+        <argsstring></argsstring>
+        <name>case_priority_colour</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="22" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_1aaa595c044583cd634def6b23b3f4565d" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.Case::deadline</definition>
+        <argsstring></argsstring>
+        <name>deadline</name>
+        <initializer>= models.DateTimeField(auto_now=True, null=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="23" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="24">
+        <label>case.models.Case</label>
+        <link refid="classcase_1_1models_1_1_case"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="26">
+        <label>case.models.Case</label>
+        <link refid="classcase_1_1models_1_1_case"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="8" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="8" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classcase_1_1models_1_1_case_1a61b93b6a72dcfc785c3601148d003eb1" prot="public" virt="non-virtual"><scope>case::models::Case</scope><name>background</name></member>
+      <member refid="classcase_1_1models_1_1_case_1af893de4eb3981b01cb77f4b219af7943" prot="public" virt="non-virtual"><scope>case::models::Case</scope><name>case_name</name></member>
+      <member refid="classcase_1_1models_1_1_case_1a6bb11442f7ff286a973228c2d66a76ba" prot="public" virt="non-virtual"><scope>case::models::Case</scope><name>case_priority</name></member>
+      <member refid="classcase_1_1models_1_1_case_1a580711fbe0ab0b7840a09c70d5c37beb" prot="public" virt="non-virtual"><scope>case::models::Case</scope><name>case_priority_colour</name></member>
+      <member refid="classcase_1_1models_1_1_case_1ad6b44c2548a8751aebf50dbb9b13017c" prot="public" virt="non-virtual"><scope>case::models::Case</scope><name>case_type</name></member>
+      <member refid="classcase_1_1models_1_1_case_1af0123b25773fc9b752dedf147c4f9dd5" prot="public" virt="non-virtual"><scope>case::models::Case</scope><name>classification</name></member>
+      <member refid="classcase_1_1models_1_1_case_1a46d955ad720ad4d170f565e19a2933c5" prot="public" virt="non-virtual"><scope>case::models::Case</scope><name>creation_date</name></member>
+      <member refid="classcase_1_1models_1_1_case_1a3ec3fd18fdfdc8e81e08c62fefaff2e4" prot="public" virt="non-virtual"><scope>case::models::Case</scope><name>currentStatus</name></member>
+      <member refid="classcase_1_1models_1_1_case_1aaa595c044583cd634def6b23b3f4565d" prot="public" virt="non-virtual"><scope>case::models::Case</scope><name>deadline</name></member>
+      <member refid="classcase_1_1models_1_1_case_1ae88f4c3c12f6b75a6bfe398ab07c74ac" prot="public" virt="non-virtual"><scope>case::models::Case</scope><name>id</name></member>
+      <member refid="classcase_1_1models_1_1_case_1a6a32b6de99a65c90fc75417c2faccf12" prot="public" virt="non-virtual"><scope>case::models::Case</scope><name>justification</name></member>
+      <member refid="classcase_1_1models_1_1_case_1ace914932117f0b4fcfa4b89e286a3c0e" prot="public" virt="non-virtual"><scope>case::models::Case</scope><name>location</name></member>
+      <member refid="classcase_1_1models_1_1_case_1a795ed71fec785084947ece3299644f74" prot="public" virt="non-virtual"><scope>case::models::Case</scope><name>private</name></member>
+      <member refid="classcase_1_1models_1_1_case_1a8ecdca80db22ee2f4345abafa5d583e7" prot="public" virt="non-virtual"><scope>case::models::Case</scope><name>reference</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classtasks_1_1models_1_1_task_category" kind="class" prot="public">
+    <compoundname>tasks::models::TaskCategory</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Model</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtasks_1_1models_1_1_task_category_1add300b26782e90139c6c5980a7a042cd" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple tasks.models.TaskCategory::category</definition>
+        <argsstring></argsstring>
+        <name>category</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" line="39" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="142">
+        <label>tasks.models.TaskCategory</label>
+        <link refid="classtasks_1_1models_1_1_task_category"/>
+        <childnode refid="143" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="144">
+        <label>tasks.models.TaskCategory</label>
+        <link refid="classtasks_1_1models_1_1_task_category"/>
+        <childnode refid="145" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="145">
+        <label>Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" line="37" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" bodystart="37" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classtasks_1_1models_1_1_task_category_1add300b26782e90139c6c5980a7a042cd" prot="public" virt="non-virtual"><scope>tasks::models::TaskCategory</scope><name>category</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classcase_1_1models_1_1_case_priority" kind="class" prot="public">
+    <compoundname>case::models::CasePriority</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Model</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_priority_1a03094af938aa69121c99bd3cb29aa1c5" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.CasePriority::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <initializer>= models.IntegerField(null=True, blank=True, <ref refid="classcase_1_1models_1_1_case_priority_1a92f919e13cd53ac765aabb48668936ea" kindref="member">default</ref>=&quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="56" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_priority_1ab79f267ed5a56fec36b134ce9ec266e0" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.CasePriority::case_priority</definition>
+        <argsstring></argsstring>
+        <name>case_priority</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, <ref refid="classcase_1_1models_1_1_case_priority_1a92f919e13cd53ac765aabb48668936ea" kindref="member">default</ref>=None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="57" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_priority_1af0255b55ecde0e7fbc0aaa1f2d8e2628" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.CasePriority::colour</definition>
+        <argsstring></argsstring>
+        <name>colour</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, <ref refid="classcase_1_1models_1_1_case_priority_1a92f919e13cd53ac765aabb48668936ea" kindref="member">default</ref>=None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="58" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_priority_1a92f919e13cd53ac765aabb48668936ea" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.CasePriority::default</definition>
+        <argsstring></argsstring>
+        <name>default</name>
+        <initializer>= models.BooleanField(default=False, blank=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="59" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="40">
+        <label>case.models.CasePriority</label>
+        <link refid="classcase_1_1models_1_1_case_priority"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="42">
+        <label>case.models.CasePriority</label>
+        <link refid="classcase_1_1models_1_1_case_priority"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="54" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="54" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classcase_1_1models_1_1_case_priority_1ab79f267ed5a56fec36b134ce9ec266e0" prot="public" virt="non-virtual"><scope>case::models::CasePriority</scope><name>case_priority</name></member>
+      <member refid="classcase_1_1models_1_1_case_priority_1af0255b55ecde0e7fbc0aaa1f2d8e2628" prot="public" virt="non-virtual"><scope>case::models::CasePriority</scope><name>colour</name></member>
+      <member refid="classcase_1_1models_1_1_case_priority_1a92f919e13cd53ac765aabb48668936ea" prot="public" virt="non-virtual"><scope>case::models::CasePriority</scope><name>default</name></member>
+      <member refid="classcase_1_1models_1_1_case_priority_1a03094af938aa69121c99bd3cb29aa1c5" prot="public" virt="non-virtual"><scope>case::models::CasePriority</scope><name>id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

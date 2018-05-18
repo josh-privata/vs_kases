@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_kases_1_1settings_1_1_common" kind="class" prot="public">
+    <compoundname>Kases::settings::Common</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Configuration</basecompoundref>
+    <derivedcompoundref refid="class_kases_1_1settings_1_1_dev" prot="public" virt="non-virtual">Kases.settings.Dev</derivedcompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_kases_1_1settings_1_1_common_1a7fca2f273225f8f10bcb267c873a3497" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Kases.settings.Common::ADMINS</definition>
+        <argsstring></argsstring>
+        <name>ADMINS</name>
+        <initializer>= (
+        (&apos;Josh Cannons&apos;, &apos;josh.cannons@gmail.com&apos;),
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="31" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kases_1_1settings_1_1_common_1a27b47b886d544cbfe66729514243b537" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Kases.settings.Common::SECRET_KEY</definition>
+        <argsstring></argsstring>
+        <name>SECRET_KEY</name>
+        <initializer>= &apos;d1307aaa-f585-475d-8567-ab6ab06ff5db&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="36" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kases_1_1settings_1_1_common_1a74fe7905d78e0abdb5164460fe16e3e8" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list Kases.settings.Common::ALLOWED_HOSTS</definition>
+        <argsstring></argsstring>
+        <name>ALLOWED_HOSTS</name>
+        <initializer>= []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="38" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kases_1_1settings_1_1_common_1a7cca94accb941c1275c8dbaab0f2703f" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list Kases.settings.Common::INSTALLED_APPS</definition>
+        <argsstring></argsstring>
+        <name>INSTALLED_APPS</name>
+        <initializer>= [
+        &apos;base&apos;,
+        &apos;evidence&apos;,
+        &apos;case&apos;,
+        &apos;personality&apos;,
+        &apos;tasks&apos;,
+        # Add your apps here to enable them
+        &apos;django.contrib.admin&apos;,
+        &apos;django.contrib.auth&apos;,
+        &apos;django.contrib.contenttypes&apos;,
+        &apos;django.contrib.sessions&apos;,
+        &apos;django.contrib.messages&apos;,
+        &apos;django.contrib.staticfiles&apos;,
+        &apos;django_tables2&apos;,
+        &apos;django_filters&apos;,
+        &apos;raven.contrib.django.raven_compat&apos;,
+    ]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="41" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kases_1_1settings_1_1_common_1a31d908539d65ae47ac5ca28a396b5684" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list Kases.settings.Common::MIDDLEWARE_CLASSES</definition>
+        <argsstring></argsstring>
+        <name>MIDDLEWARE_CLASSES</name>
+        <initializer>= [
+        &apos;django.middleware.security.SecurityMiddleware&apos;,
+        &apos;django.contrib.sessions.middleware.SessionMiddleware&apos;,
+        &apos;django.middleware.common.CommonMiddleware&apos;,
+        &apos;django.middleware.csrf.CsrfViewMiddleware&apos;,
+        &apos;django.contrib.auth.middleware.AuthenticationMiddleware&apos;,
+        &apos;django.contrib.auth.middleware.SessionAuthenticationMiddleware&apos;,
+        &apos;django.contrib.messages.middleware.MessageMiddleware&apos;,
+        &apos;django.middleware.clickjacking.XFrameOptionsMiddleware&apos;,
+    ]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="59" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kases_1_1settings_1_1_common_1a1c72a831dc60328993af110000600033" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Kases.settings.Common::ROOT_URLCONF</definition>
+        <argsstring></argsstring>
+        <name>ROOT_URLCONF</name>
+        <initializer>= &apos;Kases.urls&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="70" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kases_1_1settings_1_1_common_1ad9e7e03784ab627fe380bcf372665377" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list Kases.settings.Common::TEMPLATES</definition>
+        <argsstring></argsstring>
+        <name>TEMPLATES</name>
+        <initializer>= [
+        {
+            &apos;BACKEND&apos;: &apos;django.template.backends.django.DjangoTemplates&apos;,
+            &apos;DIRS&apos;: [join(<ref refid="namespace_kases_1_1settings_1acbec6745d4e64aa69c43365faff9667c" kindref="member">BASE_DIR</ref>, &apos;templates&apos;)],
+            &apos;APP_DIRS&apos;: True,
+            &apos;OPTIONS&apos;: {
+                &apos;context_processors&apos;: [
+                    &apos;django.template.context_processors.debug&apos;,
+                    &apos;django.template.context_processors.request&apos;,
+                    &apos;django.contrib.auth.context_processors.auth&apos;,
+                    &apos;django.contrib.messages.context_processors.messages&apos;,
+                ],
+            },
+        },
+    ]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="72" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kases_1_1settings_1_1_common_1a6bac0edcc825b9cb2f31e8cc6ebaac6d" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Kases.settings.Common::WSGI_APPLICATION</definition>
+        <argsstring></argsstring>
+        <name>WSGI_APPLICATION</name>
+        <initializer>= &apos;<ref refid="namespace_kases_1_1wsgi_1a2f4c146e32fcf543f63288f3bdce48cb" kindref="member">Kases.wsgi.application</ref>&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="88" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kases_1_1settings_1_1_common_1ab3ab6f71de7d3f7ab348bcc7522c05af" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list Kases.settings.Common::AUTH_PASSWORD_VALIDATORS</definition>
+        <argsstring></argsstring>
+        <name>AUTH_PASSWORD_VALIDATORS</name>
+        <initializer>= [
+        {
+            &apos;NAME&apos;: &apos;django.contrib.auth.password_validation.UserAttributeSimilarityValidator&apos;,
+        },
+        {
+            &apos;NAME&apos;: &apos;django.contrib.auth.password_validation.MinimumLengthValidator&apos;,
+        },
+        {
+            &apos;NAME&apos;: &apos;django.contrib.auth.password_validation.CommonPasswordValidator&apos;,
+        },
+        {
+            &apos;NAME&apos;: &apos;django.contrib.auth.password_validation.NumericPasswordValidator&apos;,
+        },
+    ]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="93" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kases_1_1settings_1_1_common_1afcf6a41dd8bbbdadbe97eb60533b762e" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Kases.settings.Common::LANGUAGE_CODE</definition>
+        <argsstring></argsstring>
+        <name>LANGUAGE_CODE</name>
+        <initializer>= &apos;en-us&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="112" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kases_1_1settings_1_1_common_1a7a42ae47de0ff86f916011b955b0cd18" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Kases.settings.Common::TIME_ZONE</definition>
+        <argsstring></argsstring>
+        <name>TIME_ZONE</name>
+        <initializer>= &apos;UTC&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="114" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kases_1_1settings_1_1_common_1a27d5a44d3c115e8d9741930f54dab814" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>Kases.settings.Common::USE_I18N</definition>
+        <argsstring></argsstring>
+        <name>USE_I18N</name>
+        <initializer>= True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="116" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kases_1_1settings_1_1_common_1ad69ad0c3a0df3a5a781ea24bd5525784" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>Kases.settings.Common::USE_L10N</definition>
+        <argsstring></argsstring>
+        <name>USE_L10N</name>
+        <initializer>= True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="118" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kases_1_1settings_1_1_common_1a60a27cfc33e15c6018d8d210f25cc5c7" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>Kases.settings.Common::USE_TZ</definition>
+        <argsstring></argsstring>
+        <name>USE_TZ</name>
+        <initializer>= True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="120" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kases_1_1settings_1_1_common_1a543e5b499217d1cf63b931dedb3fc8d6" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Kases.settings.Common::STATIC_URL</definition>
+        <argsstring></argsstring>
+        <name>STATIC_URL</name>
+        <initializer>= &apos;/static/&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="126" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kases_1_1settings_1_1_common_1a1f5c9dc723c57d5a111d07770259bf06" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Kases.settings.Common::STATIC_ROOT</definition>
+        <argsstring></argsstring>
+        <name>STATIC_ROOT</name>
+        <initializer>= posixpath.join(*(BASE_DIR.split(os.path.sep) + [&apos;static&apos;]))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="128" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="64">
+        <label>Kases.settings.Dev</label>
+        <link refid="class_kases_1_1settings_1_1_dev"/>
+        <childnode refid="62" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>Configuration</label>
+      </node>
+      <node id="62">
+        <label>Kases.settings.Common</label>
+        <link refid="class_kases_1_1settings_1_1_common"/>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="66">
+        <label>Configuration</label>
+      </node>
+      <node id="65">
+        <label>Kases.settings.Common</label>
+        <link refid="class_kases_1_1settings_1_1_common"/>
+        <childnode refid="66" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="29" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="29" bodyend="132"/>
+    <listofallmembers>
+      <member refid="class_kases_1_1settings_1_1_common_1a7fca2f273225f8f10bcb267c873a3497" prot="public" virt="non-virtual"><scope>Kases::settings::Common</scope><name>ADMINS</name></member>
+      <member refid="class_kases_1_1settings_1_1_common_1a74fe7905d78e0abdb5164460fe16e3e8" prot="public" virt="non-virtual"><scope>Kases::settings::Common</scope><name>ALLOWED_HOSTS</name></member>
+      <member refid="class_kases_1_1settings_1_1_common_1ab3ab6f71de7d3f7ab348bcc7522c05af" prot="public" virt="non-virtual"><scope>Kases::settings::Common</scope><name>AUTH_PASSWORD_VALIDATORS</name></member>
+      <member refid="class_kases_1_1settings_1_1_common_1a7cca94accb941c1275c8dbaab0f2703f" prot="public" virt="non-virtual"><scope>Kases::settings::Common</scope><name>INSTALLED_APPS</name></member>
+      <member refid="class_kases_1_1settings_1_1_common_1afcf6a41dd8bbbdadbe97eb60533b762e" prot="public" virt="non-virtual"><scope>Kases::settings::Common</scope><name>LANGUAGE_CODE</name></member>
+      <member refid="class_kases_1_1settings_1_1_common_1a31d908539d65ae47ac5ca28a396b5684" prot="public" virt="non-virtual"><scope>Kases::settings::Common</scope><name>MIDDLEWARE_CLASSES</name></member>
+      <member refid="class_kases_1_1settings_1_1_common_1a1c72a831dc60328993af110000600033" prot="public" virt="non-virtual"><scope>Kases::settings::Common</scope><name>ROOT_URLCONF</name></member>
+      <member refid="class_kases_1_1settings_1_1_common_1a27b47b886d544cbfe66729514243b537" prot="public" virt="non-virtual"><scope>Kases::settings::Common</scope><name>SECRET_KEY</name></member>
+      <member refid="class_kases_1_1settings_1_1_common_1a1f5c9dc723c57d5a111d07770259bf06" prot="public" virt="non-virtual"><scope>Kases::settings::Common</scope><name>STATIC_ROOT</name></member>
+      <member refid="class_kases_1_1settings_1_1_common_1a543e5b499217d1cf63b931dedb3fc8d6" prot="public" virt="non-virtual"><scope>Kases::settings::Common</scope><name>STATIC_URL</name></member>
+      <member refid="class_kases_1_1settings_1_1_common_1ad9e7e03784ab627fe380bcf372665377" prot="public" virt="non-virtual"><scope>Kases::settings::Common</scope><name>TEMPLATES</name></member>
+      <member refid="class_kases_1_1settings_1_1_common_1a7a42ae47de0ff86f916011b955b0cd18" prot="public" virt="non-virtual"><scope>Kases::settings::Common</scope><name>TIME_ZONE</name></member>
+      <member refid="class_kases_1_1settings_1_1_common_1a27d5a44d3c115e8d9741930f54dab814" prot="public" virt="non-virtual"><scope>Kases::settings::Common</scope><name>USE_I18N</name></member>
+      <member refid="class_kases_1_1settings_1_1_common_1ad69ad0c3a0df3a5a781ea24bd5525784" prot="public" virt="non-virtual"><scope>Kases::settings::Common</scope><name>USE_L10N</name></member>
+      <member refid="class_kases_1_1settings_1_1_common_1a60a27cfc33e15c6018d8d210f25cc5c7" prot="public" virt="non-virtual"><scope>Kases::settings::Common</scope><name>USE_TZ</name></member>
+      <member refid="class_kases_1_1settings_1_1_common_1a6bac0edcc825b9cb2f31e8cc6ebaac6d" prot="public" virt="non-virtual"><scope>Kases::settings::Common</scope><name>WSGI_APPLICATION</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

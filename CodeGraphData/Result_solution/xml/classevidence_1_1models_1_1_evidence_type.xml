@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classevidence_1_1models_1_1_evidence_type" kind="class" prot="public">
+    <compoundname>evidence::models::EvidenceType</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Model</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_evidence_type_1aa362973d76d6b2f73a6acb2fba8a61e5" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.EvidenceType::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <initializer>= models.IntegerField(null=True, blank=True, default=&quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="32" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_evidence_type_1a64eecc0ce29a5f8f842f4e0f42b2ae39" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.EvidenceType::evidence_type</definition>
+        <argsstring></argsstring>
+        <name>evidence_type</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="33" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="95">
+        <label>evidence.models.EvidenceType</label>
+        <link refid="classevidence_1_1models_1_1_evidence_type"/>
+        <childnode refid="96" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="97">
+        <label>evidence.models.EvidenceType</label>
+        <link refid="classevidence_1_1models_1_1_evidence_type"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="30" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="30" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classevidence_1_1models_1_1_evidence_type_1a64eecc0ce29a5f8f842f4e0f42b2ae39" prot="public" virt="non-virtual"><scope>evidence::models::EvidenceType</scope><name>evidence_type</name></member>
+      <member refid="classevidence_1_1models_1_1_evidence_type_1aa362973d76d6b2f73a6acb2fba8a61e5" prot="public" virt="non-virtual"><scope>evidence::models::EvidenceType</scope><name>id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_kases_1_1settings_1_1_log" kind="class" prot="public">
+    <compoundname>Kases::settings::Log</compoundname>
+    <derivedcompoundref refid="class_kases_1_1settings_1_1_dev" prot="public" virt="non-virtual">Kases.settings.Dev</derivedcompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_kases_1_1settings_1_1_log_1a563077b76fb2bdcef4d254e4a6796fb4" prot="public" static="yes" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary Kases.settings.Log::RAVEN_CONFIG</definition>
+        <argsstring></argsstring>
+        <name>RAVEN_CONFIG</name>
+        <initializer>= {
+                &apos;dsn&apos;: &apos;https://1c89626d8e02478e972af34e31360744:616e20a1933c4eb4ae3943c6b41dc3c7@sentry.io/240094&apos;,
+                # If you are using git, you can also automatically configure the
+                # release based on the git info.
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="145" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kases_1_1settings_1_1_log_1aca7368a4a8d16da1a5d4ad6e0b71dc93" prot="public" static="yes" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary Kases.settings.Log::LOGGING</definition>
+        <argsstring></argsstring>
+        <name>LOGGING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="151" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="103">
+        <label>Kases.settings.Log</label>
+        <link refid="class_kases_1_1settings_1_1_log"/>
+      </node>
+      <node id="104">
+        <label>Kases.settings.Dev</label>
+        <link refid="class_kases_1_1settings_1_1_dev"/>
+        <childnode refid="103" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" line="144" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/settings.py" bodystart="144" bodyend="204"/>
+    <listofallmembers>
+      <member refid="class_kases_1_1settings_1_1_log_1aca7368a4a8d16da1a5d4ad6e0b71dc93" prot="public" virt="non-virtual"><scope>Kases::settings::Log</scope><name>LOGGING</name></member>
+      <member refid="class_kases_1_1settings_1_1_log_1a563077b76fb2bdcef4d254e4a6796fb4" prot="public" virt="non-virtual"><scope>Kases::settings::Log</scope><name>RAVEN_CONFIG</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

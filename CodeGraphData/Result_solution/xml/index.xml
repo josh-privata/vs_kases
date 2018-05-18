@@ -1,0 +1,589 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="classbase_1_1forms_1_1_bootstrap_authentication_form" kind="class"><name>base::forms::BootstrapAuthenticationForm</name>
+    <member refid="classbase_1_1forms_1_1_bootstrap_authentication_form_1ad0e1ecac8f240084b748c949f45e4d61" kind="variable"><name>username</name></member>
+    <member refid="classbase_1_1forms_1_1_bootstrap_authentication_form_1a9365d61d19b7e3c12219d99363d5fee9" kind="variable"><name>password</name></member>
+  </compound>
+  <compound refid="classcase_1_1forms_1_1_bootstrap_authentication_form" kind="class"><name>case::forms::BootstrapAuthenticationForm</name>
+    <member refid="classcase_1_1forms_1_1_bootstrap_authentication_form_1aeed561dd5f183f1da53d0606ad26bf7f" kind="variable"><name>username</name></member>
+    <member refid="classcase_1_1forms_1_1_bootstrap_authentication_form_1aa9403ff440c6f388522f40dfb2f15871" kind="variable"><name>password</name></member>
+  </compound>
+  <compound refid="classpersonality_1_1forms_1_1_bootstrap_authentication_form" kind="class"><name>personality::forms::BootstrapAuthenticationForm</name>
+    <member refid="classpersonality_1_1forms_1_1_bootstrap_authentication_form_1ae48bac8f5f39b082fe4dd7412825b177" kind="variable"><name>username</name></member>
+    <member refid="classpersonality_1_1forms_1_1_bootstrap_authentication_form_1a11a198c1a316bbcb1d518e129dacfe1e" kind="variable"><name>password</name></member>
+  </compound>
+  <compound refid="classtasks_1_1forms_1_1_bootstrap_authentication_form" kind="class"><name>tasks::forms::BootstrapAuthenticationForm</name>
+    <member refid="classtasks_1_1forms_1_1_bootstrap_authentication_form_1a13ad8224f86e993df0405fb990f4de28" kind="variable"><name>username</name></member>
+    <member refid="classtasks_1_1forms_1_1_bootstrap_authentication_form_1ae9cc639321b90dcfd4f9aca806015a6e" kind="variable"><name>password</name></member>
+  </compound>
+  <compound refid="classevidence_1_1forms_1_1_bootstrap_authentication_form" kind="class"><name>evidence::forms::BootstrapAuthenticationForm</name>
+    <member refid="classevidence_1_1forms_1_1_bootstrap_authentication_form_1abd614116e808e95561c5458ddb4d3876" kind="variable"><name>username</name></member>
+    <member refid="classevidence_1_1forms_1_1_bootstrap_authentication_form_1af9bdff5ea93a5dc826b119a660eeb45e" kind="variable"><name>password</name></member>
+  </compound>
+  <compound refid="classapp__template_1_1forms_1_1_bootstrap_authentication_form" kind="class"><name>app_template::forms::BootstrapAuthenticationForm</name>
+    <member refid="classapp__template_1_1forms_1_1_bootstrap_authentication_form_1af6dc63f3aa8c2cab95613fcd74e50e53" kind="variable"><name>username</name></member>
+    <member refid="classapp__template_1_1forms_1_1_bootstrap_authentication_form_1a0c869b3e647042a58d01018ee9aea524" kind="variable"><name>password</name></member>
+  </compound>
+  <compound refid="classcase_1_1models_1_1_case" kind="class"><name>case::models::Case</name>
+    <member refid="classcase_1_1models_1_1_case_1ae88f4c3c12f6b75a6bfe398ab07c74ac" kind="variable"><name>id</name></member>
+    <member refid="classcase_1_1models_1_1_case_1af893de4eb3981b01cb77f4b219af7943" kind="variable"><name>case_name</name></member>
+    <member refid="classcase_1_1models_1_1_case_1a8ecdca80db22ee2f4345abafa5d583e7" kind="variable"><name>reference</name></member>
+    <member refid="classcase_1_1models_1_1_case_1a3ec3fd18fdfdc8e81e08c62fefaff2e4" kind="variable"><name>currentStatus</name></member>
+    <member refid="classcase_1_1models_1_1_case_1a795ed71fec785084947ece3299644f74" kind="variable"><name>private</name></member>
+    <member refid="classcase_1_1models_1_1_case_1a61b93b6a72dcfc785c3601148d003eb1" kind="variable"><name>background</name></member>
+    <member refid="classcase_1_1models_1_1_case_1ace914932117f0b4fcfa4b89e286a3c0e" kind="variable"><name>location</name></member>
+    <member refid="classcase_1_1models_1_1_case_1a46d955ad720ad4d170f565e19a2933c5" kind="variable"><name>creation_date</name></member>
+    <member refid="classcase_1_1models_1_1_case_1af0123b25773fc9b752dedf147c4f9dd5" kind="variable"><name>classification</name></member>
+    <member refid="classcase_1_1models_1_1_case_1a6a32b6de99a65c90fc75417c2faccf12" kind="variable"><name>justification</name></member>
+    <member refid="classcase_1_1models_1_1_case_1ad6b44c2548a8751aebf50dbb9b13017c" kind="variable"><name>case_type</name></member>
+    <member refid="classcase_1_1models_1_1_case_1a6bb11442f7ff286a973228c2d66a76ba" kind="variable"><name>case_priority</name></member>
+    <member refid="classcase_1_1models_1_1_case_1a580711fbe0ab0b7840a09c70d5c37beb" kind="variable"><name>case_priority_colour</name></member>
+    <member refid="classcase_1_1models_1_1_case_1aaa595c044583cd634def6b23b3f4565d" kind="variable"><name>deadline</name></member>
+  </compound>
+  <compound refid="classcase_1_1models_1_1_case_authorisation" kind="class"><name>case::models::CaseAuthorisation</name>
+    <member refid="classcase_1_1models_1_1_case_authorisation_1a8139e6086242af303e76764715c68ad3" kind="variable"><name>STATUS</name></member>
+    <member refid="classcase_1_1models_1_1_case_authorisation_1ab316eadcc33c2c08b269b2d5e6ea1c8d" kind="variable"><name>id</name></member>
+    <member refid="classcase_1_1models_1_1_case_authorisation_1ac0e0f10f924a473b3961e8768b1fdf31" kind="variable"><name>reason</name></member>
+    <member refid="classcase_1_1models_1_1_case_authorisation_1af1c640a7e1c0c465805fe3f9520bd48c" kind="variable"><name>date_time</name></member>
+    <member refid="classcase_1_1models_1_1_case_authorisation_1a04e619d13dece6a0c69ef5f339bf3044" kind="variable"><name>case_authorised</name></member>
+    <member refid="classcase_1_1models_1_1_case_authorisation_1ad3df41b28e2098e2b331a8e9cfe77121" kind="variable"><name>case</name></member>
+  </compound>
+  <compound refid="classcase_1_1models_1_1_case_classification" kind="class"><name>case::models::CaseClassification</name>
+    <member refid="classcase_1_1models_1_1_case_classification_1ab41454d2156231f09d895ecebeaa692b" kind="variable"><name>id</name></member>
+    <member refid="classcase_1_1models_1_1_case_classification_1affc4226aba18a84779034aa3b07b4f58" kind="variable"><name>classification</name></member>
+  </compound>
+  <compound refid="classcase_1_1models_1_1_case_history" kind="class"><name>case::models::CaseHistory</name>
+    <member refid="classcase_1_1models_1_1_case_history_1a59d4ed7852f88d413682ff6ce7cf51cc" kind="variable"><name>id</name></member>
+    <member refid="classcase_1_1models_1_1_case_history_1a64086513301a07e2cd9ec10e3bc9252c" kind="variable"><name>case_name</name></member>
+    <member refid="classcase_1_1models_1_1_case_history_1a2a6c8881f1d4c4f6c8dd90f3599627f0" kind="variable"><name>reference</name></member>
+    <member refid="classcase_1_1models_1_1_case_history_1aa41f835e7372cdf68b93eea1e00f6813" kind="variable"><name>background</name></member>
+    <member refid="classcase_1_1models_1_1_case_history_1aaf595f5e670e353dd4baa69cabd83ea5" kind="variable"><name>private</name></member>
+    <member refid="classcase_1_1models_1_1_case_history_1abcfab29e5615df19c080b4a96c158859" kind="variable"><name>date_time</name></member>
+    <member refid="classcase_1_1models_1_1_case_history_1af2ffdf41cf617219203b3bb92cd81621" kind="variable"><name>location</name></member>
+    <member refid="classcase_1_1models_1_1_case_history_1a002bc23f3d93368a1fc93e706e0c4b6c" kind="variable"><name>classification</name></member>
+    <member refid="classcase_1_1models_1_1_case_history_1a1eddea6fd4b3eb1300e19a859fe90548" kind="variable"><name>case_type</name></member>
+    <member refid="classcase_1_1models_1_1_case_history_1af8ed203ccf1a65ac7198d944a4d70130" kind="variable"><name>justification</name></member>
+    <member refid="classcase_1_1models_1_1_case_history_1a3489dd6ee0c11baef239b27e2b19dd0f" kind="variable"><name>case_priority</name></member>
+    <member refid="classcase_1_1models_1_1_case_history_1a5894cbf3901f2f79f7993061b43f613c" kind="variable"><name>case_priority_colour</name></member>
+    <member refid="classcase_1_1models_1_1_case_history_1a24b4b26f0ac7c85d1a3ab35b96f84bfd" kind="variable"><name>deadline</name></member>
+    <member refid="classcase_1_1models_1_1_case_history_1a477cb82381601e772a0e1a2379f6e8da" kind="variable"><name>case</name></member>
+    <member refid="classcase_1_1models_1_1_case_history_1a729ab9552a7e1f40785098c5a5760b89" kind="variable"><name>user</name></member>
+  </compound>
+  <compound refid="classcase_1_1models_1_1_case_priority" kind="class"><name>case::models::CasePriority</name>
+    <member refid="classcase_1_1models_1_1_case_priority_1a03094af938aa69121c99bd3cb29aa1c5" kind="variable"><name>id</name></member>
+    <member refid="classcase_1_1models_1_1_case_priority_1ab79f267ed5a56fec36b134ce9ec266e0" kind="variable"><name>case_priority</name></member>
+    <member refid="classcase_1_1models_1_1_case_priority_1af0255b55ecde0e7fbc0aaa1f2d8e2628" kind="variable"><name>colour</name></member>
+    <member refid="classcase_1_1models_1_1_case_priority_1a92f919e13cd53ac765aabb48668936ea" kind="variable"><name>default</name></member>
+  </compound>
+  <compound refid="classcase_1_1models_1_1_case_status" kind="class"><name>case::models::CaseStatus</name>
+    <member refid="classcase_1_1models_1_1_case_status_1a6d7687f9846c18662d7cd4b950c1bb7e" kind="variable"><name>CREATED</name></member>
+    <member refid="classcase_1_1models_1_1_case_status_1a45835e92086effed4b2f2c5d8931444a" kind="variable"><name>PENDING</name></member>
+    <member refid="classcase_1_1models_1_1_case_status_1a6256fdf0aa91c4f19ac530343cfc1638" kind="variable"><name>REJECTED</name></member>
+    <member refid="classcase_1_1models_1_1_case_status_1a8729590b8a86ebfe89c4260a16c7ebe0" kind="variable"><name>OPEN</name></member>
+    <member refid="classcase_1_1models_1_1_case_status_1a6fadcf2657a22229f57b96242c44c47b" kind="variable"><name>CLOSED</name></member>
+    <member refid="classcase_1_1models_1_1_case_status_1a115394c44676f64a914ba946c60dd682" kind="variable"><name>ARCHIVED</name></member>
+    <member refid="classcase_1_1models_1_1_case_status_1a8af5a6bd58113685a030510e81ca5166" kind="variable"><name>closedStatuses</name></member>
+    <member refid="classcase_1_1models_1_1_case_status_1aca934d66b1ec629ce1ec9a7234585fec" kind="variable"><name>all_statuses</name></member>
+    <member refid="classcase_1_1models_1_1_case_status_1a171070fa71d73f36f9a6bae283869ac4" kind="variable"><name>approved_statuses</name></member>
+    <member refid="classcase_1_1models_1_1_case_status_1acacad6a88b3bb4bef5f8038b548f8990" kind="variable"><name>active_statuses</name></member>
+    <member refid="classcase_1_1models_1_1_case_status_1ab2661510b907bc14bd6f336e4f7df020" kind="variable"><name>workable_statuses</name></member>
+    <member refid="classcase_1_1models_1_1_case_status_1a9cfa2b5bf35052e1629181469f636d61" kind="variable"><name>forensic_statuses</name></member>
+    <member refid="classcase_1_1models_1_1_case_status_1ab523d785492be4d38c8eaef1ee4e7ac0" kind="variable"><name>id</name></member>
+    <member refid="classcase_1_1models_1_1_case_status_1a4159262bc17c9d2127e9a9a59186e91d" kind="variable"><name>date_time</name></member>
+    <member refid="classcase_1_1models_1_1_case_status_1a8fbad32830ed6e56cfe4fb26301693dd" kind="variable"><name>status</name></member>
+    <member refid="classcase_1_1models_1_1_case_status_1ab8236f952e50003b2784e97d18487d8b" kind="variable"><name>reason</name></member>
+    <member refid="classcase_1_1models_1_1_case_status_1a3aad76c008d18be167dbf6926bf66381" kind="variable"><name>case</name></member>
+  </compound>
+  <compound refid="classcase_1_1models_1_1_case_type" kind="class"><name>case::models::CaseType</name>
+    <member refid="classcase_1_1models_1_1_case_type_1aaafe07b2f93c08a98012ce5d65bb7ffa" kind="variable"><name>id</name></member>
+    <member refid="classcase_1_1models_1_1_case_type_1a6e9221e02f830ce97a3686e14e417267" kind="variable"><name>case_type</name></member>
+  </compound>
+  <compound refid="classcase_1_1models_1_1_case_upload" kind="class"><name>case::models::CaseUpload</name>
+    <member refid="classcase_1_1models_1_1_case_upload_1a35a07902340ec55bf8891d3f1bf312ba" kind="variable"><name>case</name></member>
+  </compound>
+  <compound refid="classevidence_1_1models_1_1_chain_of_custody" kind="class"><name>evidence::models::ChainOfCustody</name>
+    <member refid="classevidence_1_1models_1_1_chain_of_custody_1a94455114b8953f676435beb3e86fd72a" kind="variable"><name>id</name></member>
+    <member refid="classevidence_1_1models_1_1_chain_of_custody_1a8444abe03515a625f8256dfdae306bc2" kind="variable"><name>date_recorded</name></member>
+    <member refid="classevidence_1_1models_1_1_chain_of_custody_1aedb7ea14974d62de2bbfa97ea7a37666" kind="variable"><name>date_of_custody</name></member>
+    <member refid="classevidence_1_1models_1_1_chain_of_custody_1aa6ca7990eec9d06fbf109ca11d13a4a1" kind="variable"><name>check_in</name></member>
+    <member refid="classevidence_1_1models_1_1_chain_of_custody_1a90e44aa96435004090db1a1b939bb372" kind="variable"><name>comment</name></member>
+    <member refid="classevidence_1_1models_1_1_chain_of_custody_1a00ee630999c91675f36a529c30a03846" kind="variable"><name>custody_receipt</name></member>
+    <member refid="classevidence_1_1models_1_1_chain_of_custody_1ae091b27a5c9cd4af8493723bcd64e1c1" kind="variable"><name>custody_receipt_label</name></member>
+    <member refid="classevidence_1_1models_1_1_chain_of_custody_1a19ce7aed45741da4e054ab302c841831" kind="variable"><name>custodian</name></member>
+    <member refid="classevidence_1_1models_1_1_chain_of_custody_1ab8d162e300090f0a66b37ed0d0081ab1" kind="variable"><name>evidence</name></member>
+  </compound>
+  <compound refid="class_kases_1_1settings_1_1_common" kind="class"><name>Kases::settings::Common</name>
+    <member refid="class_kases_1_1settings_1_1_common_1a7fca2f273225f8f10bcb267c873a3497" kind="variable"><name>ADMINS</name></member>
+    <member refid="class_kases_1_1settings_1_1_common_1a27b47b886d544cbfe66729514243b537" kind="variable"><name>SECRET_KEY</name></member>
+    <member refid="class_kases_1_1settings_1_1_common_1a74fe7905d78e0abdb5164460fe16e3e8" kind="variable"><name>ALLOWED_HOSTS</name></member>
+    <member refid="class_kases_1_1settings_1_1_common_1a7cca94accb941c1275c8dbaab0f2703f" kind="variable"><name>INSTALLED_APPS</name></member>
+    <member refid="class_kases_1_1settings_1_1_common_1a31d908539d65ae47ac5ca28a396b5684" kind="variable"><name>MIDDLEWARE_CLASSES</name></member>
+    <member refid="class_kases_1_1settings_1_1_common_1a1c72a831dc60328993af110000600033" kind="variable"><name>ROOT_URLCONF</name></member>
+    <member refid="class_kases_1_1settings_1_1_common_1ad9e7e03784ab627fe380bcf372665377" kind="variable"><name>TEMPLATES</name></member>
+    <member refid="class_kases_1_1settings_1_1_common_1a6bac0edcc825b9cb2f31e8cc6ebaac6d" kind="variable"><name>WSGI_APPLICATION</name></member>
+    <member refid="class_kases_1_1settings_1_1_common_1ab3ab6f71de7d3f7ab348bcc7522c05af" kind="variable"><name>AUTH_PASSWORD_VALIDATORS</name></member>
+    <member refid="class_kases_1_1settings_1_1_common_1afcf6a41dd8bbbdadbe97eb60533b762e" kind="variable"><name>LANGUAGE_CODE</name></member>
+    <member refid="class_kases_1_1settings_1_1_common_1a7a42ae47de0ff86f916011b955b0cd18" kind="variable"><name>TIME_ZONE</name></member>
+    <member refid="class_kases_1_1settings_1_1_common_1a27d5a44d3c115e8d9741930f54dab814" kind="variable"><name>USE_I18N</name></member>
+    <member refid="class_kases_1_1settings_1_1_common_1ad69ad0c3a0df3a5a781ea24bd5525784" kind="variable"><name>USE_L10N</name></member>
+    <member refid="class_kases_1_1settings_1_1_common_1a60a27cfc33e15c6018d8d210f25cc5c7" kind="variable"><name>USE_TZ</name></member>
+    <member refid="class_kases_1_1settings_1_1_common_1a543e5b499217d1cf63b931dedb3fc8d6" kind="variable"><name>STATIC_URL</name></member>
+    <member refid="class_kases_1_1settings_1_1_common_1a1f5c9dc723c57d5a111d07770259bf06" kind="variable"><name>STATIC_ROOT</name></member>
+  </compound>
+  <compound refid="class_kases_1_1settings_1_1_dev" kind="class"><name>Kases::settings::Dev</name>
+    <member refid="class_kases_1_1settings_1_1_dev_1a65faeb6e54a3c57e9c6a6194472a3b5e" kind="variable"><name>DEBUG</name></member>
+    <member refid="class_kases_1_1settings_1_1_dev_1a329c7b3d88aabc52f896bc19de8d5bb7" kind="variable"><name>INTERNAL_IPS</name></member>
+  </compound>
+  <compound refid="classevidence_1_1models_1_1_evidence" kind="class"><name>evidence::models::Evidence</name>
+    <member refid="classevidence_1_1models_1_1_evidence_1a5f4b9ce1cfa945ac57f83d859d257218" kind="variable"><name>id</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_1aa8dad5ce34e9091d93d64007021055c5" kind="variable"><name>reference</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_1a8d75cc06a8e0db4b43ba78b9a4a91c95" kind="variable"><name>type</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_1ae45188ae954468a3e2258896a55ad771" kind="variable"><name>qr_code</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_1a83019a49a308f0b53be743ec6fc37a8c" kind="variable"><name>qr_code_text</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_1a9b24cefa0bf7e9413e92626437db627b" kind="variable"><name>comment</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_1a83dcf6e26af916531689aa1283f1ebdb" kind="variable"><name>originator</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_1a547a23c14f46a4d7392df4f05bb43b29" kind="variable"><name>evidence_bag_number</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_1a33636c3f03136d2e53e1ceab7ecf305b" kind="variable"><name>location</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_1abdb64d07c17ee3123794381bec981721" kind="variable"><name>current_status</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_1ab66fdf6133a208edbdcd677f10205520" kind="variable"><name>date_added</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_1aa06266e24c3d7cc195f4f2e7bd8c9ee7" kind="variable"><name>retention_start_date</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_1a548e21bde796d073ac6152d43712acd9" kind="variable"><name>retention_date</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_1a35fa6bbd05b49a2965c9548af56cfd94" kind="variable"><name>retention_reminder_sent</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_1a8ba6b858eb5d5f97a9dd58e2c393eea5" kind="variable"><name>case</name></member>
+  </compound>
+  <compound refid="classevidence_1_1models_1_1_evidence_history" kind="class"><name>evidence::models::EvidenceHistory</name>
+    <member refid="classevidence_1_1models_1_1_evidence_history_1a7fcfacbac53bc5a742075c3a66f7ead7" kind="variable"><name>id</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_history_1a42283babba1e152df4b1b287d8d087fa" kind="variable"><name>date_time</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_history_1a9fa5e6698f1e0ef4eba3e0173a5f01a9" kind="variable"><name>reference</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_history_1a20550d147d421119e22bac8e2702ae77" kind="variable"><name>type</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_history_1a89a850703f9f9af5033847496289e595" kind="variable"><name>qr_code</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_history_1a1d304dd3a9070e44bdeadb9a96b256a0" kind="variable"><name>qr_code_text</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_history_1a5516294671bf4617e596f983dc28e6ff" kind="variable"><name>comment</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_history_1a82a6b57501408a4d00ef82763ba446b7" kind="variable"><name>originator</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_history_1ac9e6e20dfcff8b2fd5618f0a29b4c6c3" kind="variable"><name>evidence_bag_number</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_history_1a680a9f5c8b90209cd9860c9727fb343d" kind="variable"><name>location</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_history_1a2de2f27fc68e74cd52a2404d021b2a1c" kind="variable"><name>evidence</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_history_1a76f36e5c66361f3df16c16ad04862f29" kind="variable"><name>case</name></member>
+  </compound>
+  <compound refid="classevidence_1_1models_1_1_evidence_photo_upload" kind="class"><name>evidence::models::EvidencePhotoUpload</name>
+    <member refid="classevidence_1_1models_1_1_evidence_photo_upload_1aab13e6c55bada17c587305c4a8067a2e" kind="variable"><name>evidence_id</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_photo_upload_1a449fcd77155076b4d17c26c18b8b9393" kind="variable"><name>evidence</name></member>
+  </compound>
+  <compound refid="classevidence_1_1models_1_1_evidence_status" kind="class"><name>evidence::models::EvidenceStatus</name>
+    <member refid="classevidence_1_1models_1_1_evidence_status_1a58a3c3f6d7f281e189084d1bd6857bcf" kind="variable"><name>INACTIVE</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_status_1aed706c28bf5b2910278a5a27dedd4e66" kind="variable"><name>ACTIVE</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_status_1a5cba8c42c5f5479b689d1942b3c6408e" kind="variable"><name>ARCHIVED</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_status_1a44180e724c194edd4b1d1541027c0758" kind="variable"><name>DESTROYED</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_status_1aeb78f0c9296c033c2b420d24d5809391" kind="variable"><name>statuses</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_status_1a5a500dffca56517ea40f6a79bc52097b" kind="variable"><name>id</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_status_1affe0b0ea1180ada3b0f624c0d8eefd47" kind="variable"><name>date_time</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_status_1a00efd49f2c7ba2d318a3ab11271d8d46" kind="variable"><name>status</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_status_1a0159d574fb097673d8956dd29a6d7c00" kind="variable"><name>note</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_status_1a4b15e0a0f490b255cb53325001f1d056" kind="variable"><name>evidence</name></member>
+  </compound>
+  <compound refid="classevidence_1_1models_1_1_evidence_type" kind="class"><name>evidence::models::EvidenceType</name>
+    <member refid="classevidence_1_1models_1_1_evidence_type_1aa362973d76d6b2f73a6acb2fba8a61e5" kind="variable"><name>id</name></member>
+    <member refid="classevidence_1_1models_1_1_evidence_type_1a64eecc0ce29a5f8f842f4e0f42b2ae39" kind="variable"><name>evidence_type</name></member>
+  </compound>
+  <compound refid="classcase_1_1models_1_1_linked_case" kind="class"><name>case::models::LinkedCase</name>
+    <member refid="classcase_1_1models_1_1_linked_case_1ac6c8444db0a5224ae1d482d42afedb24" kind="variable"><name>id</name></member>
+    <member refid="classcase_1_1models_1_1_linked_case_1a8ac72b96a8da0c82442e6acd642ba194" kind="variable"><name>reason</name></member>
+    <member refid="classcase_1_1models_1_1_linked_case_1a50664f570c0124e55cc27af761febda9" kind="variable"><name>date_time</name></member>
+    <member refid="classcase_1_1models_1_1_linked_case_1a32571d398ae5e08555d092f36c9a587a" kind="variable"><name>removed</name></member>
+  </compound>
+  <compound refid="class_kases_1_1settings_1_1_log" kind="class"><name>Kases::settings::Log</name>
+    <member refid="class_kases_1_1settings_1_1_log_1a563077b76fb2bdcef4d254e4a6796fb4" kind="variable"><name>RAVEN_CONFIG</name></member>
+    <member refid="class_kases_1_1settings_1_1_log_1aca7368a4a8d16da1a5d4ad6e0b71dc93" kind="variable"><name>LOGGING</name></member>
+  </compound>
+  <compound refid="classcase_1_1apps_1_1music_config" kind="class"><name>case::apps::musicConfig</name>
+    <member refid="classcase_1_1apps_1_1music_config_1a61037810071b5dee867b1d731c195eb1" kind="variable"><name>name</name></member>
+  </compound>
+  <compound refid="classpersonality_1_1apps_1_1music_config" kind="class"><name>personality::apps::musicConfig</name>
+    <member refid="classpersonality_1_1apps_1_1music_config_1a0804f180e4c822d89f7dcd77b72d796b" kind="variable"><name>name</name></member>
+  </compound>
+  <compound refid="classtasks_1_1apps_1_1music_config" kind="class"><name>tasks::apps::musicConfig</name>
+    <member refid="classtasks_1_1apps_1_1music_config_1af60577ddeceb820af18d1cd653cb4d4e" kind="variable"><name>name</name></member>
+  </compound>
+  <compound refid="classbase_1_1apps_1_1music_config" kind="class"><name>base::apps::musicConfig</name>
+    <member refid="classbase_1_1apps_1_1music_config_1a6d98a67cb2294e5973626b76cd4f6bca" kind="variable"><name>name</name></member>
+  </compound>
+  <compound refid="classevidence_1_1apps_1_1music_config" kind="class"><name>evidence::apps::musicConfig</name>
+    <member refid="classevidence_1_1apps_1_1music_config_1adc52bca8fb333e08e9ad4042c2169f48" kind="variable"><name>name</name></member>
+  </compound>
+  <compound refid="classapp__template_1_1apps_1_1music_config" kind="class"><name>app_template::apps::musicConfig</name>
+    <member refid="classapp__template_1_1apps_1_1music_config_1a43e4b557f35e51b9eb7dbbad2c2b73ac" kind="variable"><name>name</name></member>
+  </compound>
+  <compound refid="classtasks_1_1models_1_1_special_text" kind="class"><name>tasks::models::SpecialText</name>
+    <member refid="classtasks_1_1models_1_1_special_text_1af083c8133bf29765d97b9188e8007225" kind="variable"><name>model</name></member>
+    <member refid="classtasks_1_1models_1_1_special_text_1a6c05206a977e181256012ed1e02a7504" kind="variable"><name>text</name></member>
+  </compound>
+  <compound refid="class_kases_1_1settings_1_1_s_q_llite" kind="class"><name>Kases::settings::SQLlite</name>
+    <member refid="class_kases_1_1settings_1_1_s_q_llite_1a5ccb42a15be65fda5bfe8e1694b635d6" kind="variable"><name>DATABASES</name></member>
+  </compound>
+  <compound refid="classtasks_1_1models_1_1_task" kind="class"><name>tasks::models::Task</name>
+    <member refid="classtasks_1_1models_1_1_task_1a6b534e159ee6c28911ed586a4d3ad583" kind="variable"><name>task_name</name></member>
+    <member refid="classtasks_1_1models_1_1_task_1a4155646fc6fae8e08ae987f1e1ce0b99" kind="variable"><name>background</name></member>
+    <member refid="classtasks_1_1models_1_1_task_1ab261e14d1e3a77bc179e988f413fe774" kind="variable"><name>princQA</name></member>
+    <member refid="classtasks_1_1models_1_1_task_1a5b6e888569dd01abc32a45999a9be04c" kind="variable"><name>seconQA</name></member>
+    <member refid="classtasks_1_1models_1_1_task_1a4078c57f788b55ac420051c45056ebb4" kind="variable"><name>currentStatus</name></member>
+    <member refid="classtasks_1_1models_1_1_task_1af701c8d6c6ff7331a19f69a54b75b440" kind="variable"><name>location</name></member>
+    <member refid="classtasks_1_1models_1_1_task_1a3d775178e57230ae303535e63c0bbed4" kind="variable"><name>creation_date</name></member>
+    <member refid="classtasks_1_1models_1_1_task_1af41a38874a03d23c78ab02056a524c54" kind="variable"><name>deadline</name></member>
+    <member refid="classtasks_1_1models_1_1_task_1a354658b4123733b3cdd010e75315d021" kind="variable"><name>case</name></member>
+    <member refid="classtasks_1_1models_1_1_task_1a1b3c12f57e331fc58cb09ff6213d0acf" kind="variable"><name>task_type</name></member>
+  </compound>
+  <compound refid="classtasks_1_1models_1_1_task_category" kind="class"><name>tasks::models::TaskCategory</name>
+    <member refid="classtasks_1_1models_1_1_task_category_1add300b26782e90139c6c5980a7a042cd" kind="variable"><name>category</name></member>
+  </compound>
+  <compound refid="classtasks_1_1models_1_1_task_history" kind="class"><name>tasks::models::TaskHistory</name>
+    <member refid="classtasks_1_1models_1_1_task_history_1ad9f5b6bbf437050bf6281fd629c22405" kind="variable"><name>date_time</name></member>
+    <member refid="classtasks_1_1models_1_1_task_history_1a5e70d28e0a199d4afdd9eadc3945ac9d" kind="variable"><name>task_name</name></member>
+    <member refid="classtasks_1_1models_1_1_task_history_1a8d39fafe32bda20db3d30e17ff66097b" kind="variable"><name>location</name></member>
+    <member refid="classtasks_1_1models_1_1_task_history_1a89c1f28a54dce94a5ae7b4bf83135b3b" kind="variable"><name>background</name></member>
+    <member refid="classtasks_1_1models_1_1_task_history_1a8c24849d67059df1587f85dd795b7fa1" kind="variable"><name>deadline</name></member>
+    <member refid="classtasks_1_1models_1_1_task_history_1a6e5b6d5f1761b3d5827acabcf410c306" kind="variable"><name>task</name></member>
+    <member refid="classtasks_1_1models_1_1_task_history_1a3a71b25637fba81b800d0506043337f0" kind="variable"><name>task_type</name></member>
+  </compound>
+  <compound refid="classtasks_1_1models_1_1_task_notes" kind="class"><name>tasks::models::TaskNotes</name>
+    <member refid="classtasks_1_1models_1_1_task_notes_1a9c724794776a21bfb580c4627560f742" kind="variable"><name>date_time</name></member>
+    <member refid="classtasks_1_1models_1_1_task_notes_1a6c384a2ea6251279c6ad61307d31ec25" kind="variable"><name>note</name></member>
+    <member refid="classtasks_1_1models_1_1_task_notes_1aa3a03ada12cc3ac69c1e67e265967a1a" kind="variable"><name>hash</name></member>
+    <member refid="classtasks_1_1models_1_1_task_notes_1a579842e951c40dd6983292d5bd6020cb" kind="variable"><name>task</name></member>
+  </compound>
+  <compound refid="classtasks_1_1models_1_1_task_type" kind="class"><name>tasks::models::TaskType</name>
+    <member refid="classtasks_1_1models_1_1_task_type_1ab4e97f0c976c0d51bb85c7738d1b30e4" kind="variable"><name>task_type</name></member>
+    <member refid="classtasks_1_1models_1_1_task_type_1a7d7b26ca1e8a59fd4b9d5e782d9477a1" kind="variable"><name>category</name></member>
+  </compound>
+  <compound refid="classtasks_1_1models_1_1_task_upload" kind="class"><name>tasks::models::TaskUpload</name>
+    <member refid="classtasks_1_1models_1_1_task_upload_1a01ad079dc15b52af11fbdaeeddb169e0" kind="variable"><name>CREATED</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1a20c5cc8c36948392c7d7ce07713de24d" kind="variable"><name>QUEUED</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1a041f79a1ea42ef05e36692caa23532b5" kind="variable"><name>ALLOCATED</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1ad341abcbb936365eee20aac6ba87907e" kind="variable"><name>PROGRESS</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1aba629c63b63b644a61133bcd0f7682c8" kind="variable"><name>QA</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1a5e281d4e07e88b655121f4ffb236eb42" kind="variable"><name>DELIVERY</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1a8e26113a24553365c3491a7e2594b532" kind="variable"><name>COMPLETE</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1a730e370d0bb0eeca4906e4a831a8b230" kind="variable"><name>CLOSED</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1a501be44299d3eb0c5732fc56ed1b81ba" kind="variable"><name>CHOICES</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1aabb55fab9a457cdb92a3d3b8fefdfc9a" kind="variable"><name>openStatuses</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1a2367ceb3cd62119afd72c9a2f6f44ccf" kind="variable"><name>beAssigned</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1a71f791b3ac8f0426a61abdc44143d6b9" kind="variable"><name>preInvestigation</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1a71e4c254fd67b4cc88e0eb2e731b3d38" kind="variable"><name>notesAllowed</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1acad83f23a138ef0aeb197b3dc96e79d6" kind="variable"><name>qaComplete</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1ab4fcb1538e9d0a571e20e4ea511cadb1" kind="variable"><name>closedStatuses</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1a92765bfaaea3149b9159d9e91e2b8062" kind="variable"><name>invRoles</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1a1bb83a8caa61517ff1024a5ca2b38b92" kind="variable"><name>qaRoles</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1ae29820a93975c6a352219ad1c67c7020" kind="variable"><name>workerRoles</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1a86c97ccfbe852a1d314eed23f97222b1" kind="variable"><name>all_statuses</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1ae0e2bf0fccd2a6b53d917b67d0be37a1" kind="variable"><name>date_time</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1ab1b2e755b14d815ebd8320480bdb2bd1" kind="variable"><name>status</name></member>
+    <member refid="classtasks_1_1models_1_1_task_upload_1a85bd0e0b79f011b9141644c83c8c29e1" kind="variable"><name>note</name></member>
+  </compound>
+  <compound refid="classbase_1_1models_1_1_upload_model" kind="class"><name>base::models::UploadModel</name>
+    <member refid="classbase_1_1models_1_1_upload_model_1a008c53fde29fad927f9348ddadc0bcbb" kind="variable"><name>id</name></member>
+    <member refid="classbase_1_1models_1_1_upload_model_1af67f019ba33e9cd642328b1b4e85e237" kind="variable"><name>date_time</name></member>
+    <member refid="classbase_1_1models_1_1_upload_model_1ad262c2f009487f6f383de2debea50b56" kind="variable"><name>file_note</name></member>
+    <member refid="classbase_1_1models_1_1_upload_model_1a3f7a980a81d23ec936ee6030ead40c68" kind="variable"><name>file_hash</name></member>
+    <member refid="classbase_1_1models_1_1_upload_model_1a0f8f4746cd5d7b74d9e01fd3ef52e2b0" kind="variable"><name>file_name</name></member>
+    <member refid="classbase_1_1models_1_1_upload_model_1a97e79c407264dc950264748121d66487" kind="variable"><name>upload_location</name></member>
+    <member refid="classbase_1_1models_1_1_upload_model_1a39c7f3ba3d49b0ec9ecb5d28d998049a" kind="variable"><name>file_title</name></member>
+    <member refid="classbase_1_1models_1_1_upload_model_1af37cbe8ea63cae83e9efb4393c3204a8" kind="variable"><name>deleted</name></member>
+    <member refid="classbase_1_1models_1_1_upload_model_1af828e21ede14f9bc5ccbcd4bfd7607e8" kind="variable"><name>date_deleted</name></member>
+  </compound>
+  <compound refid="classbase_1_1tests_1_1_view_test" kind="class"><name>base::tests::ViewTest</name>
+    <member refid="classbase_1_1tests_1_1_view_test_1a3ca37a8d2b363e5a256c9a90c5934a33" kind="function"><name>setUpClass</name></member>
+    <member refid="classbase_1_1tests_1_1_view_test_1aba4f16467eb68ba431888b62729d36d2" kind="function"><name>test_home</name></member>
+    <member refid="classbase_1_1tests_1_1_view_test_1a994cc85e5f682e76b7d4e4b4e789dc48" kind="function"><name>test_contact</name></member>
+  </compound>
+  <compound refid="classapp__template_1_1tests_1_1_view_test" kind="class"><name>app_template::tests::ViewTest</name>
+    <member refid="classapp__template_1_1tests_1_1_view_test_1a8f62a561d4d2204440aefd9d4df75e21" kind="function"><name>setUpClass</name></member>
+    <member refid="classapp__template_1_1tests_1_1_view_test_1aef13083004b1b0c5691d62d54eb3d8b4" kind="function"><name>test_home</name></member>
+    <member refid="classapp__template_1_1tests_1_1_view_test_1a03525be91f328939d951274641dee361" kind="function"><name>test_contact</name></member>
+    <member refid="classapp__template_1_1tests_1_1_view_test_1ac37f732b6ccd1594d82d2853c9be3fab" kind="function"><name>test_about</name></member>
+  </compound>
+  <compound refid="classpersonality_1_1tests_1_1_view_test" kind="class"><name>personality::tests::ViewTest</name>
+    <member refid="classpersonality_1_1tests_1_1_view_test_1a828f8554f3fb7c69558168842fc3b5e9" kind="function"><name>setUpClass</name></member>
+    <member refid="classpersonality_1_1tests_1_1_view_test_1ac44d5725136a696091155d4fad09867a" kind="function"><name>test_home</name></member>
+  </compound>
+  <compound refid="classevidence_1_1tests_1_1_view_test" kind="class"><name>evidence::tests::ViewTest</name>
+    <member refid="classevidence_1_1tests_1_1_view_test_1ad23c80886e8d6ddc220e071d9535db44" kind="function"><name>setUpClass</name></member>
+    <member refid="classevidence_1_1tests_1_1_view_test_1ab2990abc0e180217879a513d273ae3f6" kind="function"><name>test_home</name></member>
+  </compound>
+  <compound refid="classtasks_1_1tests_1_1_view_test" kind="class"><name>tasks::tests::ViewTest</name>
+    <member refid="classtasks_1_1tests_1_1_view_test_1ac8e08070d3b8ad877a97b46e9d737e8b" kind="function"><name>setUpClass</name></member>
+    <member refid="classtasks_1_1tests_1_1_view_test_1a478ab60e005a6c6a4f31ed8a3ff7f912" kind="function"><name>test_home</name></member>
+  </compound>
+  <compound refid="classcase_1_1tests_1_1_view_test" kind="class"><name>case::tests::ViewTest</name>
+    <member refid="classcase_1_1tests_1_1_view_test_1a76b5068f898b1d63d31a84bb2e96d4d5" kind="function"><name>setUpClass</name></member>
+    <member refid="classcase_1_1tests_1_1_view_test_1ab4f34fb8c9d34288d5f56cda27c5a146" kind="function"><name>test_home</name></member>
+  </compound>
+  <compound refid="namespaceapp__template" kind="namespace"><name>app_template</name>
+  </compound>
+  <compound refid="namespaceapp__template_1_1admin" kind="namespace"><name>app_template::admin</name>
+  </compound>
+  <compound refid="namespaceapp__template_1_1apps" kind="namespace"><name>app_template::apps</name>
+  </compound>
+  <compound refid="namespaceapp__template_1_1forms" kind="namespace"><name>app_template::forms</name>
+  </compound>
+  <compound refid="namespaceapp__template_1_1migrations" kind="namespace"><name>app_template::migrations</name>
+  </compound>
+  <compound refid="namespaceapp__template_1_1models" kind="namespace"><name>app_template::models</name>
+  </compound>
+  <compound refid="namespaceapp__template_1_1tests" kind="namespace"><name>app_template::tests</name>
+  </compound>
+  <compound refid="namespaceapp__template_1_1views" kind="namespace"><name>app_template::views</name>
+    <member refid="namespaceapp__template_1_1views_1a7bec7b31d85e035c141fdf77d77393e9" kind="function"><name>home</name></member>
+    <member refid="namespaceapp__template_1_1views_1a46758d8f28a37cc519debd7d9343bf65" kind="function"><name>contact</name></member>
+    <member refid="namespaceapp__template_1_1views_1a62c00e5bcf8114032bffd7f94814cfba" kind="function"><name>about</name></member>
+  </compound>
+  <compound refid="namespacebase" kind="namespace"><name>base</name>
+  </compound>
+  <compound refid="namespacebase_1_1admin" kind="namespace"><name>base::admin</name>
+  </compound>
+  <compound refid="namespacebase_1_1apps" kind="namespace"><name>base::apps</name>
+  </compound>
+  <compound refid="namespacebase_1_1forms" kind="namespace"><name>base::forms</name>
+  </compound>
+  <compound refid="namespacebase_1_1migrations" kind="namespace"><name>base::migrations</name>
+  </compound>
+  <compound refid="namespacebase_1_1models" kind="namespace"><name>base::models</name>
+  </compound>
+  <compound refid="namespacebase_1_1tests" kind="namespace"><name>base::tests</name>
+  </compound>
+  <compound refid="namespacebase_1_1views" kind="namespace"><name>base::views</name>
+    <member refid="namespacebase_1_1views_1ae759a95951d5bf38853a8beceab47de9" kind="function"><name>home</name></member>
+    <member refid="namespacebase_1_1views_1af9d7408ee79455d2ed8e057e95891ced" kind="function"><name>contact</name></member>
+  </compound>
+  <compound refid="namespacecase" kind="namespace"><name>case</name>
+  </compound>
+  <compound refid="namespacecase_1_1admin" kind="namespace"><name>case::admin</name>
+  </compound>
+  <compound refid="namespacecase_1_1apps" kind="namespace"><name>case::apps</name>
+  </compound>
+  <compound refid="namespacecase_1_1forms" kind="namespace"><name>case::forms</name>
+  </compound>
+  <compound refid="namespacecase_1_1migrations" kind="namespace"><name>case::migrations</name>
+  </compound>
+  <compound refid="namespacecase_1_1models" kind="namespace"><name>case::models</name>
+  </compound>
+  <compound refid="namespacecase_1_1tests" kind="namespace"><name>case::tests</name>
+  </compound>
+  <compound refid="namespacecase_1_1views" kind="namespace"><name>case::views</name>
+    <member refid="namespacecase_1_1views_1a79c2ab77fe01498880fd8d2cee6fe846" kind="function"><name>home</name></member>
+  </compound>
+  <compound refid="namespaceevidence" kind="namespace"><name>evidence</name>
+  </compound>
+  <compound refid="namespaceevidence_1_1admin" kind="namespace"><name>evidence::admin</name>
+  </compound>
+  <compound refid="namespaceevidence_1_1apps" kind="namespace"><name>evidence::apps</name>
+  </compound>
+  <compound refid="namespaceevidence_1_1forms" kind="namespace"><name>evidence::forms</name>
+  </compound>
+  <compound refid="namespaceevidence_1_1migrations" kind="namespace"><name>evidence::migrations</name>
+  </compound>
+  <compound refid="namespaceevidence_1_1models" kind="namespace"><name>evidence::models</name>
+  </compound>
+  <compound refid="namespaceevidence_1_1tests" kind="namespace"><name>evidence::tests</name>
+  </compound>
+  <compound refid="namespaceevidence_1_1views" kind="namespace"><name>evidence::views</name>
+    <member refid="namespaceevidence_1_1views_1a00d3290a9e60f9ea8829073e5c96a234" kind="function"><name>home</name></member>
+  </compound>
+  <compound refid="namespace_kases" kind="namespace"><name>Kases</name>
+  </compound>
+  <compound refid="namespace_kases_1_1settings" kind="namespace"><name>Kases::settings</name>
+    <member refid="namespace_kases_1_1settings_1acbec6745d4e64aa69c43365faff9667c" kind="variable"><name>BASE_DIR</name></member>
+    <member refid="namespace_kases_1_1settings_1a01d3e4a87991296a42053004136e8592" kind="variable"><name>PROJECT_NAME</name></member>
+    <member refid="namespace_kases_1_1settings_1a6258e824b207e84fa88fd31c2fa7b4d7" kind="variable"><name>PROJECT_ENVIRONMENT_SLUG</name></member>
+  </compound>
+  <compound refid="namespace_kases_1_1urls" kind="namespace"><name>Kases::urls</name>
+    <member refid="namespace_kases_1_1urls_1abe6b2ee4b86640f28f9d9d31b79181c4" kind="variable"><name>urlpatterns</name></member>
+  </compound>
+  <compound refid="namespace_kases_1_1wsgi" kind="namespace"><name>Kases::wsgi</name>
+    <member refid="namespace_kases_1_1wsgi_1a2f4c146e32fcf543f63288f3bdce48cb" kind="variable"><name>application</name></member>
+  </compound>
+  <compound refid="namespacemanage" kind="namespace"><name>manage</name>
+  </compound>
+  <compound refid="namespacepersonality" kind="namespace"><name>personality</name>
+  </compound>
+  <compound refid="namespacepersonality_1_1admin" kind="namespace"><name>personality::admin</name>
+  </compound>
+  <compound refid="namespacepersonality_1_1apps" kind="namespace"><name>personality::apps</name>
+  </compound>
+  <compound refid="namespacepersonality_1_1forms" kind="namespace"><name>personality::forms</name>
+  </compound>
+  <compound refid="namespacepersonality_1_1migrations" kind="namespace"><name>personality::migrations</name>
+  </compound>
+  <compound refid="namespacepersonality_1_1models" kind="namespace"><name>personality::models</name>
+  </compound>
+  <compound refid="namespacepersonality_1_1tests" kind="namespace"><name>personality::tests</name>
+  </compound>
+  <compound refid="namespacepersonality_1_1views" kind="namespace"><name>personality::views</name>
+    <member refid="namespacepersonality_1_1views_1a57d3c00caf31fc0b4c7751f5888230aa" kind="function"><name>home</name></member>
+  </compound>
+  <compound refid="namespacetasks" kind="namespace"><name>tasks</name>
+  </compound>
+  <compound refid="namespacetasks_1_1admin" kind="namespace"><name>tasks::admin</name>
+  </compound>
+  <compound refid="namespacetasks_1_1apps" kind="namespace"><name>tasks::apps</name>
+  </compound>
+  <compound refid="namespacetasks_1_1forms" kind="namespace"><name>tasks::forms</name>
+  </compound>
+  <compound refid="namespacetasks_1_1migrations" kind="namespace"><name>tasks::migrations</name>
+  </compound>
+  <compound refid="namespacetasks_1_1models" kind="namespace"><name>tasks::models</name>
+  </compound>
+  <compound refid="namespacetasks_1_1tests" kind="namespace"><name>tasks::tests</name>
+  </compound>
+  <compound refid="namespacetasks_1_1views" kind="namespace"><name>tasks::views</name>
+    <member refid="namespacetasks_1_1views_1a63d075eb204f050e5c16dd249ef30005" kind="function"><name>home</name></member>
+  </compound>
+  <compound refid="app__template_2admin_8py" kind="file"><name>admin.py</name>
+  </compound>
+  <compound refid="base_2admin_8py" kind="file"><name>admin.py</name>
+  </compound>
+  <compound refid="case_2admin_8py" kind="file"><name>admin.py</name>
+  </compound>
+  <compound refid="evidence_2admin_8py" kind="file"><name>admin.py</name>
+  </compound>
+  <compound refid="personality_2admin_8py" kind="file"><name>admin.py</name>
+  </compound>
+  <compound refid="tasks_2admin_8py" kind="file"><name>admin.py</name>
+  </compound>
+  <compound refid="app__template_2apps_8py" kind="file"><name>apps.py</name>
+  </compound>
+  <compound refid="base_2apps_8py" kind="file"><name>apps.py</name>
+  </compound>
+  <compound refid="case_2apps_8py" kind="file"><name>apps.py</name>
+  </compound>
+  <compound refid="evidence_2apps_8py" kind="file"><name>apps.py</name>
+  </compound>
+  <compound refid="personality_2apps_8py" kind="file"><name>apps.py</name>
+  </compound>
+  <compound refid="tasks_2apps_8py" kind="file"><name>apps.py</name>
+  </compound>
+  <compound refid="app__template_2forms_8py" kind="file"><name>forms.py</name>
+  </compound>
+  <compound refid="base_2forms_8py" kind="file"><name>forms.py</name>
+  </compound>
+  <compound refid="case_2forms_8py" kind="file"><name>forms.py</name>
+  </compound>
+  <compound refid="evidence_2forms_8py" kind="file"><name>forms.py</name>
+  </compound>
+  <compound refid="personality_2forms_8py" kind="file"><name>forms.py</name>
+  </compound>
+  <compound refid="tasks_2forms_8py" kind="file"><name>forms.py</name>
+  </compound>
+  <compound refid="app__template_2migrations_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="app__template_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="base_2migrations_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="base_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="case_2migrations_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="case_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="evidence_2migrations_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="evidence_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="_kases_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="personality_2migrations_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="personality_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="tasks_2migrations_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="tasks_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="app__template_2models_8py" kind="file"><name>models.py</name>
+  </compound>
+  <compound refid="base_2models_8py" kind="file"><name>models.py</name>
+  </compound>
+  <compound refid="case_2models_8py" kind="file"><name>models.py</name>
+  </compound>
+  <compound refid="evidence_2models_8py" kind="file"><name>models.py</name>
+  </compound>
+  <compound refid="personality_2models_8py" kind="file"><name>models.py</name>
+  </compound>
+  <compound refid="tasks_2models_8py" kind="file"><name>models.py</name>
+  </compound>
+  <compound refid="app__template_2tests_8py" kind="file"><name>tests.py</name>
+  </compound>
+  <compound refid="base_2tests_8py" kind="file"><name>tests.py</name>
+  </compound>
+  <compound refid="case_2tests_8py" kind="file"><name>tests.py</name>
+  </compound>
+  <compound refid="evidence_2tests_8py" kind="file"><name>tests.py</name>
+  </compound>
+  <compound refid="personality_2tests_8py" kind="file"><name>tests.py</name>
+  </compound>
+  <compound refid="tasks_2tests_8py" kind="file"><name>tests.py</name>
+  </compound>
+  <compound refid="app__template_2views_8py" kind="file"><name>views.py</name>
+  </compound>
+  <compound refid="base_2views_8py" kind="file"><name>views.py</name>
+  </compound>
+  <compound refid="case_2views_8py" kind="file"><name>views.py</name>
+  </compound>
+  <compound refid="evidence_2views_8py" kind="file"><name>views.py</name>
+  </compound>
+  <compound refid="personality_2views_8py" kind="file"><name>views.py</name>
+  </compound>
+  <compound refid="tasks_2views_8py" kind="file"><name>views.py</name>
+  </compound>
+  <compound refid="settings_8py" kind="file"><name>settings.py</name>
+  </compound>
+  <compound refid="urls_8py" kind="file"><name>urls.py</name>
+  </compound>
+  <compound refid="wsgi_8py" kind="file"><name>wsgi.py</name>
+  </compound>
+  <compound refid="manage_8py" kind="file"><name>manage.py</name>
+  </compound>
+  <compound refid="dir_6a4c670826246228843fa46728ad249f" kind="dir"><name>//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/app_template</name>
+  </compound>
+  <compound refid="dir_0defa4c5b39ba522b0964de67a1e9d25" kind="dir"><name>//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/base</name>
+  </compound>
+  <compound refid="dir_43d517474284abb38d805fa87582221a" kind="dir"><name>//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case</name>
+  </compound>
+  <compound refid="dir_10e299941bc9283e54ef3a835136cd4f" kind="dir"><name>//ml350/users$/josh/Documents/My Code/Django</name>
+  </compound>
+  <compound refid="dir_a82832203ff4f94cf58ad0e2c100b83a" kind="dir"><name>//ml350/users$/josh/Documents</name>
+  </compound>
+  <compound refid="dir_a82957da1d7402749ff9bba150d73d11" kind="dir"><name>//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence</name>
+  </compound>
+  <compound refid="dir_2719de3b78ce849803833b06d3d79bd5" kind="dir"><name>//ml350/users$/josh</name>
+  </compound>
+  <compound refid="dir_751fac8be96ab8ee8c7fddfe362e5753" kind="dir"><name>//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases</name>
+  </compound>
+  <compound refid="dir_9c7a9727dc35ae86c68b0cd8fd860f76" kind="dir"><name>//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases</name>
+  </compound>
+  <compound refid="dir_ac91cfa020560ff2de2551e25e6f9307" kind="dir"><name>//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/migrations</name>
+  </compound>
+  <compound refid="dir_cdd04c33ea8b165a34559629e4f8db21" kind="dir"><name>//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/personality/migrations</name>
+  </compound>
+  <compound refid="dir_a7d5b4bc8162d09f85e40c00164a0f61" kind="dir"><name>//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/migrations</name>
+  </compound>
+  <compound refid="dir_a05ca9d552c9020ff0038affd24b50a5" kind="dir"><name>//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/migrations</name>
+  </compound>
+  <compound refid="dir_278002a11789b183fe994665793f8575" kind="dir"><name>//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/base/migrations</name>
+  </compound>
+  <compound refid="dir_5ea9da62a3066cf6910b2073ae613923" kind="dir"><name>//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/app_template/migrations</name>
+  </compound>
+  <compound refid="dir_94fdb4ee5ba78f1a93f8bc4748b7a40b" kind="dir"><name>//ml350</name>
+  </compound>
+  <compound refid="dir_1532501521c45012965570071dd7fcd8" kind="dir"><name>//ml350/users$/josh/Documents/My Code</name>
+  </compound>
+  <compound refid="dir_b2474d92aae5aa9e89f9396a46b8b5e1" kind="dir"><name>//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/personality</name>
+  </compound>
+  <compound refid="dir_dba27cf6dc1650459798522601af06bf" kind="dir"><name>//ml350/users$/josh/Documents/My Code/Django/Projects</name>
+  </compound>
+  <compound refid="dir_d07fec62f2f462ea7033fffdd55ab659" kind="dir"><name>//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks</name>
+  </compound>
+  <compound refid="dir_0b4bd3903fee71e319485722986adae6" kind="dir"><name>//ml350/users$</name>
+  </compound>
+  <compound refid="dir_f1d49ee660c71af06da987565017a449" kind="dir"><name>//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases</name>
+  </compound>
+</doxygenindex>

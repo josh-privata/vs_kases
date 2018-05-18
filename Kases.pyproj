@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>Kases</Name>
+    <RootNamespace>Kases</RootNamespace>
+    <InterpreterId>MSBuild|venv1|$(MSBuildProjectFullPath)</InterpreterId>
+    <PythonRunWebServerCommandArguments>runserver --settings=Kases.settings 127.0.0.1:8080 $(CommandLineArguments) --configuration=Dev</PythonRunWebServerCommandArguments>
+    <PythonDebugWebServerCommandArguments>runserver --noreload --settings=Kases.settings 127.0.0.1:8080 $(CommandLineArguments) --configuration=Dev</PythonDebugWebServerCommandArguments>
+    <WebBrowserPort>8080</WebBrowserPort>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>5b8abc3e-c78f-488d-b4a9-e49d2737e3c9</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://127.0.0.1</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>Kases.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="base\admin.py" />
+    <Compile Include="base\apps.py" />
+    <Compile Include="base\mixin.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="case\managers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="case\tables.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="configuration\admin.py" />
+    <Compile Include="configuration\apps.py" />
+    <Compile Include="configuration\migrations\__init__.py" />
+    <Compile Include="configuration\models.py" />
+    <Compile Include="configuration\tests.py" />
+    <Compile Include="configuration\views.py" />
+    <Compile Include="configuration\__init__.py" />
+    <Compile Include="tasks\admin.py" />
+    <Compile Include="tasks\apps.py" />
+    <Compile Include="tasks\forms.py" />
+    <Compile Include="tasks\migrations\__init__.py" />
+    <Compile Include="tasks\models.py" />
+    <Compile Include="tasks\tests.py" />
+    <Compile Include="tasks\views.py" />
+    <Compile Include="tasks\__init__.py" />
+    <Compile Include="personality\admin.py" />
+    <Compile Include="personality\apps.py" />
+    <Compile Include="personality\forms.py" />
+    <Compile Include="personality\migrations\__init__.py" />
+    <Compile Include="personality\models.py" />
+    <Compile Include="personality\tests.py" />
+    <Compile Include="personality\views.py" />
+    <Compile Include="personality\__init__.py" />
+    <Compile Include="case\admin.py" />
+    <Compile Include="case\apps.py" />
+    <Compile Include="case\forms.py" />
+    <Compile Include="case\migrations\__init__.py" />
+    <Compile Include="case\models.py" />
+    <Compile Include="case\tests.py" />
+    <Compile Include="case\views.py" />
+    <Compile Include="case\__init__.py" />
+    <Compile Include="base\forms.py" />
+    <Compile Include="base\models.py" />
+    <Compile Include="base\tests.py" />
+    <Compile Include="base\views.py" />
+    <Compile Include="base\__init__.py" />
+    <Compile Include="base\migrations\__init__.py" />
+    <Compile Include="evidence\admin.py" />
+    <Compile Include="evidence\apps.py" />
+    <Compile Include="evidence\forms.py" />
+    <Compile Include="evidence\migrations\__init__.py" />
+    <Compile Include="evidence\models.py" />
+    <Compile Include="evidence\tests.py" />
+    <Compile Include="evidence\views.py" />
+    <Compile Include="evidence\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="Kases\__init__.py" />
+    <Compile Include="Kases\settings.py" />
+    <Compile Include="Kases\urls.py" />
+    <Compile Include="Kases\wsgi.py" />
+    <Compile Include="user\admin.py" />
+    <Compile Include="user\apps.py" />
+    <Compile Include="user\migrations\__init__.py" />
+    <Compile Include="user\models.py" />
+    <Compile Include="user\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="user\tests.py" />
+    <Compile Include="user\views.py" />
+    <Compile Include="user\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app_template\" />
+    <Folder Include="app_template\migrations\" />
+    <Folder Include="app_template\templates\" />
+    <Folder Include="base\static\base\webfonts\" />
+    <Folder Include="configuration\" />
+    <Folder Include="configuration\migrations\" />
+    <Folder Include="configuration\templates\" />
+    <Folder Include="configuration\templates\configration\" />
+    <Folder Include="templates\" />
+    <Folder Include="templates\global\" />
+    <Folder Include="templates\registration\" />
+    <Folder Include="user\" />
+    <Folder Include="user\migrations\" />
+    <Folder Include="user\templates\" />
+    <Folder Include="user\templates\user\" />
+    <Folder Include="\\ml350\users%24\josh\Documents\My Code\Django\Projects\vs_kases\Kases\templates\" />
+    <Folder Include="case\" />
+    <Folder Include="case\migrations\" />
+    <Folder Include="case\templates\" />
+    <Folder Include="case\templates\case\" />
+    <Folder Include="personality\" />
+    <Folder Include="personality\migrations\" />
+    <Folder Include="personality\templates\" />
+    <Folder Include="personality\templates\personality\" />
+    <Folder Include="tasks\" />
+    <Folder Include="tasks\migrations\" />
+    <Folder Include="tasks\templates\" />
+    <Folder Include="tasks\templates\tasks\" />
+    <Folder Include="\\ml350\users%24\josh\Documents\My Code\Django\Projects\vs_kases\Kases\tasks\" />
+    <Folder Include="\\ml350\users%24\josh\Documents\My Code\Django\Projects\vs_kases\Kases\tasks\migrations\" />
+    <Folder Include="\\ml350\users%24\josh\Documents\My Code\Django\Projects\vs_kases\Kases\tasks\templates\" />
+    <Folder Include="\\ml350\users%24\josh\Documents\My Code\Django\Projects\vs_kases\Kases\tasks\templates\tasks\" />
+    <Folder Include="\\ml350\users%24\josh\Documents\My Code\Django\Projects\vs_kases\Kases\personality\" />
+    <Folder Include="\\ml350\users%24\josh\Documents\My Code\Django\Projects\vs_kases\Kases\personality\migrations\" />
+    <Folder Include="\\ml350\users%24\josh\Documents\My Code\Django\Projects\vs_kases\Kases\personality\templates\" />
+    <Folder Include="\\ml350\users%24\josh\Documents\My Code\Django\Projects\vs_kases\Kases\personality\templates\personality\" />
+    <Folder Include="\\ml350\users%24\josh\Documents\My Code\Django\Projects\vs_kases\Kases\case\" />
+    <Folder Include="\\ml350\users%24\josh\Documents\My Code\Django\Projects\vs_kases\Kases\case\migrations\" />
+    <Folder Include="\\ml350\users%24\josh\Documents\My Code\Django\Projects\vs_kases\Kases\case\templates\" />
+    <Folder Include="\\ml350\users%24\josh\Documents\My Code\Django\Projects\vs_kases\Kases\case\templates\case\" />
+    <Folder Include="evidence\templates\evidence\" />
+    <Folder Include="\\ml350\users%24\josh\Documents\My Code\Django\Projects\vs_kases\Kases\app_template\" />
+    <Folder Include="\\ml350\users%24\josh\Documents\My Code\Django\Projects\vs_kases\Kases\app_template\migrations\" />
+    <Folder Include="\\ml350\users%24\josh\Documents\My Code\Django\Projects\vs_kases\Kases\app_template\templates\" />
+    <Folder Include="base\static\base\" />
+    <Folder Include="base\static\base\content\" />
+    <Folder Include="base\static\base\fonts\" />
+    <Folder Include="base\static\base\scripts\" />
+    <Folder Include="base\" />
+    <Folder Include="base\migrations\" />
+    <Folder Include="base\static\" />
+    <Folder Include="base\templates\" />
+    <Folder Include="base\templates\base\" />
+    <Folder Include="evidence\" />
+    <Folder Include="evidence\migrations\" />
+    <Folder Include="evidence\templates\" />
+    <Folder Include="Kases\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="base\static\base\content\bsadmin.css" />
+    <Content Include="base\static\base\content\fontawesome.min.css" />
+    <Content Include="base\static\base\content\simple-sidebar.css" />
+    <Content Include="base\static\base\scripts\bootstrap.bundle.js" />
+    <Content Include="base\static\base\scripts\bsadmin.js" />
+    <Content Include="base\static\base\scripts\jquery.js" />
+    <Content Include="base\static\base\scripts\jquery.min.js" />
+    <Content Include="base\static\base\scripts\popper.min.js" />
+    <Content Include="base\static\base\webfonts\fa-brands-400.eot" />
+    <Content Include="base\static\base\webfonts\fa-brands-400.svg" />
+    <Content Include="base\static\base\webfonts\fa-brands-400.ttf" />
+    <Content Include="base\static\base\webfonts\fa-brands-400.woff" />
+    <Content Include="base\static\base\webfonts\fa-brands-400.woff2" />
+    <Content Include="base\static\base\webfonts\fa-regular-400.eot" />
+    <Content Include="base\static\base\webfonts\fa-regular-400.svg" />
+    <Content Include="base\static\base\webfonts\fa-regular-400.ttf" />
+    <Content Include="base\static\base\webfonts\fa-regular-400.woff" />
+    <Content Include="base\static\base\webfonts\fa-regular-400.woff2" />
+    <Content Include="base\static\base\webfonts\fa-solid-900.eot" />
+    <Content Include="base\static\base\webfonts\fa-solid-900.svg" />
+    <Content Include="base\static\base\webfonts\fa-solid-900.ttf" />
+    <Content Include="base\static\base\webfonts\fa-solid-900.woff" />
+    <Content Include="base\static\base\webfonts\fa-solid-900.woff2" />
+    <Content Include="base\static\base\webfonts\glyphicons-halflings-regular.eot" />
+    <Content Include="base\static\base\webfonts\glyphicons-halflings-regular.svg" />
+    <Content Include="base\static\base\webfonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="base\static\base\webfonts\glyphicons-halflings-regular.woff" />
+    <Content Include="case\templates\case\case_create.html" />
+    <Content Include="case\templates\case\case_confirm_delete.html" />
+    <Content Include="case\templates\case\case_detail.html" />
+    <Content Include="case\templates\case\case_layout.html" />
+    <Content Include="case\templates\case\case_list.html" />
+    <Content Include="case\templates\case\case_table.html" />
+    <Content Include="case\templates\case\case_update.html" />
+    <Content Include="configuration\templates\configration\index.html" />
+    <Content Include="evidence\templates\evidence\new_evidence.html" />
+    <Content Include="personality\templates\personality\newpersonality.html" />
+    <Content Include="templates\global\noauth_base.html" />
+    <Content Include="tasks\templates\tasks\index.html" />
+    <Content Include="personality\templates\personality\index.html" />
+    <Content Include="case\templates\case\case_index.html" />
+    <Content Include="base\static\base\content\bootstrap.css" />
+    <Content Include="base\static\base\content\bootstrap.min.css" />
+    <Content Include="base\static\base\content\site.css" />
+    <Content Include="base\static\base\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="base\static\base\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="base\static\base\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="base\static\base\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="tasks\templates\tasks\new_task.html" />
+    <Content Include="templates\global\auth_base.html" />
+    <Content Include="templates\global\sidebar.html" />
+    <Content Include="templates\registration\logged_out.html" />
+    <Content Include="templates\registration\login.html" />
+    <Content Include="templates\registration\password_reset_complete.html" />
+    <Content Include="templates\registration\password_reset_confirm.html" />
+    <Content Include="templates\registration\password_reset_done.html" />
+    <Content Include="templates\registration\password_reset_email.html" />
+    <Content Include="templates\registration\password_reset_form.html" />
+    <Content Include="user\templates\user\index.html" />
+    <Content Include="user\templates\user\profile.html" />
+    <None Include="base\static\base\scripts\_references.js" />
+    <Content Include="base\static\base\scripts\bootstrap.js" />
+    <Content Include="base\static\base\scripts\bootstrap.min.js" />
+    <None Include="base\static\base\scripts\jquery.validate-vsdoc.js" />
+    <None Include="base\static\base\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="base\static\base\scripts\jquery-1.10.2.js" />
+    <Content Include="base\static\base\scripts\jquery-1.10.2.min.js" />
+    <Content Include="base\static\base\scripts\jquery-1.10.2.min.map" />
+    <Content Include="base\static\base\scripts\jquery.validate.js" />
+    <Content Include="base\static\base\scripts\jquery.validate.min.js" />
+    <Content Include="base\static\base\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="base\static\base\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="base\static\base\scripts\modernizr-2.6.2.js" />
+    <Content Include="base\static\base\scripts\respond.js" />
+    <Content Include="base\static\base\scripts\respond.min.js" />
+    <Content Include="evidence\templates\evidence\index.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="base\templates\base\contact.html" />
+    <Content Include="base\templates\base\index.html" />
+    <Content Include="templates\global\layout.html" />
+    <Content Include="templates\registration\loginpartial.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="venv\">
+      <Id>venv1</Id>
+      <Version>3.6</Version>
+      <Description>venv (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

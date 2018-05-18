@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespace_kases_1_1urls" kind="namespace">
+    <compoundname>Kases::urls</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_kases_1_1urls_1abe6b2ee4b86640f28f9d9d31b79181c4" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list Kases::urls.urlpatterns</definition>
+        <argsstring></argsstring>
+        <name>urlpatterns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/urls.py" line="20" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/urls.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Definition of urls for Audiad.
+</verbatim> </para>    </detaileddescription>
+    <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/urls.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

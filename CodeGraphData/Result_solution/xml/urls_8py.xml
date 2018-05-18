@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="urls_8py" kind="file">
+    <compoundname>urls.py</compoundname>
+    <innernamespace refid="namespace_kases_1_1urls">Kases::urls</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespace_kases_1_1urls" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="2"><highlight class="stringliteral">Definition<sp/>of<sp/>urls<sp/>for<sp/>Audiad.</highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>datetime<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>datetime</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>django.conf.urls<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>url</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>django.contrib.auth.views</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacebase_1_1forms" kindref="compound">base.forms</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacebase_1_1views" kindref="compound">base.views</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacecase_1_1views" kindref="compound">case.views</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacepersonality_1_1views" kindref="compound">personality.views</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespaceevidence_1_1views" kindref="compound">evidence.views</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacetasks_1_1views" kindref="compound">tasks.views</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Uncomment<sp/>the<sp/>next<sp/>lines<sp/>to<sp/>enable<sp/>the<sp/>admin:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">#<sp/>from<sp/>django.conf.urls<sp/>import<sp/>include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">#<sp/>from<sp/>django.contrib<sp/>import<sp/>admin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">#<sp/>admin.autodiscover()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="namespace_kases_1_1urls_1abe6b2ee4b86640f28f9d9d31b79181c4" refkind="member"><highlight class="normal">urlpatterns<sp/>=<sp/>[</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Base</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>url(</highlight><highlight class="stringliteral">r&apos;^$&apos;</highlight><highlight class="normal">,<sp/>base.views.home,<sp/>name=</highlight><highlight class="stringliteral">&apos;home&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>url(</highlight><highlight class="stringliteral">r&apos;^contact$&apos;</highlight><highlight class="normal">,<sp/>base.views.contact,<sp/>name=</highlight><highlight class="stringliteral">&apos;contact&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Menu</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>url(</highlight><highlight class="stringliteral">r&apos;^evidence&apos;</highlight><highlight class="normal">,<sp/>evidence.views.home,<sp/>name=</highlight><highlight class="stringliteral">&apos;evidence&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>url(</highlight><highlight class="stringliteral">r&apos;^cases&apos;</highlight><highlight class="normal">,<sp/>case.views.home,<sp/>name=</highlight><highlight class="stringliteral">&apos;cases&apos;</highlight><highlight class="normal">),<sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>url(</highlight><highlight class="stringliteral">r&apos;^tasks&apos;</highlight><highlight class="normal">,<sp/>tasks.views.home,<sp/>name=</highlight><highlight class="stringliteral">&apos;tasks&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>url(</highlight><highlight class="stringliteral">r&apos;^personality&apos;</highlight><highlight class="normal">,<sp/>personality.views.home,<sp/>name=</highlight><highlight class="stringliteral">&apos;personality&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Login</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>url(</highlight><highlight class="stringliteral">r&apos;^login/$&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>django.contrib.auth.views.login,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;template_name&apos;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&apos;base/login.html&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;authentication_form&apos;</highlight><highlight class="normal">:<sp/><ref refid="classbase_1_1forms_1_1_bootstrap_authentication_form" kindref="compound">base.forms.BootstrapAuthenticationForm</ref>,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;extra_context&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;title&apos;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&apos;Log<sp/>in&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;year&apos;</highlight><highlight class="normal">:<sp/>datetime.now().year,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&apos;login&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Logout</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>url(</highlight><highlight class="stringliteral">r&apos;^logout$&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>django.contrib.auth.views.logout,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;next_page&apos;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&apos;/&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&apos;logout&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Uncomment<sp/>the<sp/>admin/doc<sp/>line<sp/>below<sp/>to<sp/>enable<sp/>admin<sp/>documentation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>url(r&apos;^admin/doc/&apos;,<sp/>include(&apos;django.contrib.admindocs.urls&apos;)),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Uncomment<sp/>the<sp/>next<sp/>line<sp/>to<sp/>enable<sp/>the<sp/>admin:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>url(r&apos;^admin/&apos;,<sp/>include(admin.site.urls)),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">]</highlight></codeline>
+    </programlisting>
+    <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases/urls.py"/>
+  </compounddef>
+</doxygen>

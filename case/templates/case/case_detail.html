@@ -1,0 +1,21 @@
+﻿{% extends "case/case_layout.html" %}
+
+
+{% block content %}
+<h1>Case Detail</h1>
+<h4>Case Title: {{ object.title }}</h4>
+<h4>Case ID: {{ object.id }}</h4>
+<h4>Case Brief: {{ object.brief }}</h4>
+<h4>Case Background: {{ object.background}}</h4>
+<h4>Case Description: {{ object.description }}</h4>
+<h4>Case Reference: {{ object.reference }}</h4>
+<h4>Case Location: {{ object.location }}</h4>
+<h4>Comment: {{ object.comment }}</h4>
+<h4>Private: {{ object.private }}</h4>
+<h4>Case Type: {{ object.type }}</h4>
+<h4>Case Status: {{ object.status }}</h4>
+<h4>Case Classification:{{ object.classification}}</h4>
+<h4>Case Authorisation: {{ object.authorisation }}</h4>
+<h4>Case Deadline: {{ object.deadline }}</h4>
+<h4>Case Creation Date: {{ object.creation_date }}</h4>
+{% endblock %}

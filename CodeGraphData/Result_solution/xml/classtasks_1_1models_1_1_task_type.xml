@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classtasks_1_1models_1_1_task_type" kind="class" prot="public">
+    <compoundname>tasks::models::TaskType</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Model</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtasks_1_1models_1_1_task_type_1ab4e97f0c976c0d51bb85c7738d1b30e4" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple tasks.models.TaskType::task_type</definition>
+        <argsstring></argsstring>
+        <name>task_type</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" line="26" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtasks_1_1models_1_1_task_type_1a7d7b26ca1e8a59fd4b9d5e782d9477a1" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple tasks.models.TaskType::category</definition>
+        <argsstring></argsstring>
+        <name>category</name>
+        <initializer>= models.ForeignKey(<ref refid="classtasks_1_1models_1_1_task_category" kindref="compound">TaskCategory</ref>, on_delete=models.SET_NULL, blank=True, null=True, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" line="28" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="154">
+        <label>tasks.models.TaskType</label>
+        <link refid="classtasks_1_1models_1_1_task_type"/>
+        <childnode refid="155" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="155">
+        <label>Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="156">
+        <label>tasks.models.TaskType</label>
+        <link refid="classtasks_1_1models_1_1_task_type"/>
+        <childnode refid="157" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" line="24" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" bodystart="24" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classtasks_1_1models_1_1_task_type_1a7d7b26ca1e8a59fd4b9d5e782d9477a1" prot="public" virt="non-virtual"><scope>tasks::models::TaskType</scope><name>category</name></member>
+      <member refid="classtasks_1_1models_1_1_task_type_1ab4e97f0c976c0d51bb85c7738d1b30e4" prot="public" virt="non-virtual"><scope>tasks::models::TaskType</scope><name>task_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

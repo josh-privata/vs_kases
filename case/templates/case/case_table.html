@@ -1,0 +1,7 @@
+﻿{% extends "case/case_layout.html" %}
+{% load django_tables2 %}
+
+{% block content %}
+    <h2>Cases</h2>
+{% render_table table %}
+{% endblock %}

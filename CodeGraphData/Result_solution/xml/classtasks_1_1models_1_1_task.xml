@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classtasks_1_1models_1_1_task" kind="class" prot="public">
+    <compoundname>tasks::models::Task</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Model</basecompoundref>
+    <derivedcompoundref refid="classtasks_1_1models_1_1_task_upload" prot="public" virt="non-virtual">tasks.models.TaskUpload</derivedcompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtasks_1_1models_1_1_task_1a6b534e159ee6c28911ed586a4d3ad583" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple tasks.models.Task::task_name</definition>
+        <argsstring></argsstring>
+        <name>task_name</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" line="11" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtasks_1_1models_1_1_task_1a4155646fc6fae8e08ae987f1e1ce0b99" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple tasks.models.Task::background</definition>
+        <argsstring></argsstring>
+        <name>background</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" line="12" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtasks_1_1models_1_1_task_1ab261e14d1e3a77bc179e988f413fe774" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple tasks.models.Task::princQA</definition>
+        <argsstring></argsstring>
+        <name>princQA</name>
+        <initializer>= models.BooleanField(default=False, blank=True, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" line="13" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtasks_1_1models_1_1_task_1a5b6e888569dd01abc32a45999a9be04c" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple tasks.models.Task::seconQA</definition>
+        <argsstring></argsstring>
+        <name>seconQA</name>
+        <initializer>= models.BooleanField(default=False, blank=True, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" line="14" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtasks_1_1models_1_1_task_1a4078c57f788b55ac420051c45056ebb4" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple tasks.models.Task::currentStatus</definition>
+        <argsstring></argsstring>
+        <name>currentStatus</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" line="15" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtasks_1_1models_1_1_task_1af701c8d6c6ff7331a19f69a54b75b440" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple tasks.models.Task::location</definition>
+        <argsstring></argsstring>
+        <name>location</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" line="16" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtasks_1_1models_1_1_task_1a3d775178e57230ae303535e63c0bbed4" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple tasks.models.Task::creation_date</definition>
+        <argsstring></argsstring>
+        <name>creation_date</name>
+        <initializer>= models.DateTimeField(auto_now=True, null=True, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" line="17" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtasks_1_1models_1_1_task_1af41a38874a03d23c78ab02056a524c54" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple tasks.models.Task::deadline</definition>
+        <argsstring></argsstring>
+        <name>deadline</name>
+        <initializer>= models.DateTimeField(auto_now=True, null=True, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" line="18" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtasks_1_1models_1_1_task_1a354658b4123733b3cdd010e75315d021" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple tasks.models.Task::case</definition>
+        <argsstring></argsstring>
+        <name>case</name>
+        <initializer>= models.ForeignKey(<ref refid="classcase_1_1models_1_1_case" kindref="compound">Case</ref>, on_delete=models.SET_NULL, blank=True, null=True, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" line="20" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtasks_1_1models_1_1_task_1a1b3c12f57e331fc58cb09ff6213d0acf" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple tasks.models.Task::task_type</definition>
+        <argsstring></argsstring>
+        <name>task_type</name>
+        <initializer>= models.ForeignKey(<ref refid="classtasks_1_1models_1_1_task_type" kindref="compound">TaskType</ref>, on_delete=models.SET_NULL, blank=True, null=True, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" line="21" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="137">
+        <label>tasks.models.Task</label>
+        <link refid="classtasks_1_1models_1_1_task"/>
+        <childnode refid="138" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>tasks.models.TaskUpload</label>
+        <link refid="classtasks_1_1models_1_1_task_upload"/>
+        <childnode refid="137" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="140">
+        <label>tasks.models.Task</label>
+        <link refid="classtasks_1_1models_1_1_task"/>
+        <childnode refid="141" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" line="9" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks/models.py" bodystart="9" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classtasks_1_1models_1_1_task_1a4155646fc6fae8e08ae987f1e1ce0b99" prot="public" virt="non-virtual"><scope>tasks::models::Task</scope><name>background</name></member>
+      <member refid="classtasks_1_1models_1_1_task_1a354658b4123733b3cdd010e75315d021" prot="public" virt="non-virtual"><scope>tasks::models::Task</scope><name>case</name></member>
+      <member refid="classtasks_1_1models_1_1_task_1a3d775178e57230ae303535e63c0bbed4" prot="public" virt="non-virtual"><scope>tasks::models::Task</scope><name>creation_date</name></member>
+      <member refid="classtasks_1_1models_1_1_task_1a4078c57f788b55ac420051c45056ebb4" prot="public" virt="non-virtual"><scope>tasks::models::Task</scope><name>currentStatus</name></member>
+      <member refid="classtasks_1_1models_1_1_task_1af41a38874a03d23c78ab02056a524c54" prot="public" virt="non-virtual"><scope>tasks::models::Task</scope><name>deadline</name></member>
+      <member refid="classtasks_1_1models_1_1_task_1af701c8d6c6ff7331a19f69a54b75b440" prot="public" virt="non-virtual"><scope>tasks::models::Task</scope><name>location</name></member>
+      <member refid="classtasks_1_1models_1_1_task_1ab261e14d1e3a77bc179e988f413fe774" prot="public" virt="non-virtual"><scope>tasks::models::Task</scope><name>princQA</name></member>
+      <member refid="classtasks_1_1models_1_1_task_1a5b6e888569dd01abc32a45999a9be04c" prot="public" virt="non-virtual"><scope>tasks::models::Task</scope><name>seconQA</name></member>
+      <member refid="classtasks_1_1models_1_1_task_1a6b534e159ee6c28911ed586a4d3ad583" prot="public" virt="non-virtual"><scope>tasks::models::Task</scope><name>task_name</name></member>
+      <member refid="classtasks_1_1models_1_1_task_1a1b3c12f57e331fc58cb09ff6213d0acf" prot="public" virt="non-virtual"><scope>tasks::models::Task</scope><name>task_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

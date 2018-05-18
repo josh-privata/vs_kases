@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_9c7a9727dc35ae86c68b0cd8fd860f76" kind="dir">
+    <compoundname>//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases</compoundname>
+    <innerdir refid="dir_6a4c670826246228843fa46728ad249f">//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/app_template</innerdir>
+    <innerdir refid="dir_0defa4c5b39ba522b0964de67a1e9d25">//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/base</innerdir>
+    <innerdir refid="dir_43d517474284abb38d805fa87582221a">//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case</innerdir>
+    <innerdir refid="dir_a82957da1d7402749ff9bba150d73d11">//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence</innerdir>
+    <innerdir refid="dir_751fac8be96ab8ee8c7fddfe362e5753">//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/Kases</innerdir>
+    <innerdir refid="dir_b2474d92aae5aa9e89f9396a46b8b5e1">//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/personality</innerdir>
+    <innerdir refid="dir_d07fec62f2f462ea7033fffdd55ab659">//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/tasks</innerdir>
+    <innerfile refid="manage_8py">manage.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/"/>
+  </compounddef>
+</doxygen>

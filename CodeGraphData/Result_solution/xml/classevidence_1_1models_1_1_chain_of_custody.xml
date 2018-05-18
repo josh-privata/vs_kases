@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classevidence_1_1models_1_1_chain_of_custody" kind="class" prot="public">
+    <compoundname>evidence::models::ChainOfCustody</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Model</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_chain_of_custody_1a94455114b8953f676435beb3e86fd72a" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.ChainOfCustody::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <initializer>= models.IntegerField(null=True, blank=True, default=&quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="38" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_chain_of_custody_1a8444abe03515a625f8256dfdae306bc2" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.ChainOfCustody::date_recorded</definition>
+        <argsstring></argsstring>
+        <name>date_recorded</name>
+        <initializer>= models.DateTimeField(auto_now=True, null=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="39" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_chain_of_custody_1aedb7ea14974d62de2bbfa97ea7a37666" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.ChainOfCustody::date_of_custody</definition>
+        <argsstring></argsstring>
+        <name>date_of_custody</name>
+        <initializer>= models.DateTimeField(auto_now=True, null=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="40" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_chain_of_custody_1aa6ca7990eec9d06fbf109ca11d13a4a1" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.ChainOfCustody::check_in</definition>
+        <argsstring></argsstring>
+        <name>check_in</name>
+        <initializer>= models.BooleanField(default=False, blank=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="41" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_chain_of_custody_1a90e44aa96435004090db1a1b939bb372" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.ChainOfCustody::comment</definition>
+        <argsstring></argsstring>
+        <name>comment</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="42" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_chain_of_custody_1a00ee630999c91675f36a529c30a03846" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.ChainOfCustody::custody_receipt</definition>
+        <argsstring></argsstring>
+        <name>custody_receipt</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="43" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_chain_of_custody_1ae091b27a5c9cd4af8493723bcd64e1c1" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.ChainOfCustody::custody_receipt_label</definition>
+        <argsstring></argsstring>
+        <name>custody_receipt_label</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="44" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_chain_of_custody_1a19ce7aed45741da4e054ab302c841831" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.ChainOfCustody::custodian</definition>
+        <argsstring></argsstring>
+        <name>custodian</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="45" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classevidence_1_1models_1_1_chain_of_custody_1ab8d162e300090f0a66b37ed0d0081ab1" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple evidence.models.ChainOfCustody::evidence</definition>
+        <argsstring></argsstring>
+        <name>evidence</name>
+        <initializer>= models.ForeignKey(<ref refid="classevidence_1_1models_1_1_evidence" kindref="compound">Evidence</ref>, on_delete=models.SET_NULL, blank=True, null=True, verbose_name=&quot;the&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="48" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="58">
+        <label>evidence.models.ChainOfCustody</label>
+        <link refid="classevidence_1_1models_1_1_chain_of_custody"/>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="60">
+        <label>evidence.models.ChainOfCustody</label>
+        <link refid="classevidence_1_1models_1_1_chain_of_custody"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" line="36" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/evidence/models.py" bodystart="36" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classevidence_1_1models_1_1_chain_of_custody_1aa6ca7990eec9d06fbf109ca11d13a4a1" prot="public" virt="non-virtual"><scope>evidence::models::ChainOfCustody</scope><name>check_in</name></member>
+      <member refid="classevidence_1_1models_1_1_chain_of_custody_1a90e44aa96435004090db1a1b939bb372" prot="public" virt="non-virtual"><scope>evidence::models::ChainOfCustody</scope><name>comment</name></member>
+      <member refid="classevidence_1_1models_1_1_chain_of_custody_1a19ce7aed45741da4e054ab302c841831" prot="public" virt="non-virtual"><scope>evidence::models::ChainOfCustody</scope><name>custodian</name></member>
+      <member refid="classevidence_1_1models_1_1_chain_of_custody_1a00ee630999c91675f36a529c30a03846" prot="public" virt="non-virtual"><scope>evidence::models::ChainOfCustody</scope><name>custody_receipt</name></member>
+      <member refid="classevidence_1_1models_1_1_chain_of_custody_1ae091b27a5c9cd4af8493723bcd64e1c1" prot="public" virt="non-virtual"><scope>evidence::models::ChainOfCustody</scope><name>custody_receipt_label</name></member>
+      <member refid="classevidence_1_1models_1_1_chain_of_custody_1aedb7ea14974d62de2bbfa97ea7a37666" prot="public" virt="non-virtual"><scope>evidence::models::ChainOfCustody</scope><name>date_of_custody</name></member>
+      <member refid="classevidence_1_1models_1_1_chain_of_custody_1a8444abe03515a625f8256dfdae306bc2" prot="public" virt="non-virtual"><scope>evidence::models::ChainOfCustody</scope><name>date_recorded</name></member>
+      <member refid="classevidence_1_1models_1_1_chain_of_custody_1ab8d162e300090f0a66b37ed0d0081ab1" prot="public" virt="non-virtual"><scope>evidence::models::ChainOfCustody</scope><name>evidence</name></member>
+      <member refid="classevidence_1_1models_1_1_chain_of_custody_1a94455114b8953f676435beb3e86fd72a" prot="public" virt="non-virtual"><scope>evidence::models::ChainOfCustody</scope><name>id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

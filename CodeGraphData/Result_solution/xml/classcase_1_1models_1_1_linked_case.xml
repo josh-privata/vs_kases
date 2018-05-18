@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classcase_1_1models_1_1_linked_case" kind="class" prot="public">
+    <compoundname>case::models::LinkedCase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Model</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcase_1_1models_1_1_linked_case_1ac6c8444db0a5224ae1d482d42afedb24" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.LinkedCase::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <initializer>= models.IntegerField(null=True, blank=True, default=&quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="64" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_linked_case_1a8ac72b96a8da0c82442e6acd642ba194" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.LinkedCase::reason</definition>
+        <argsstring></argsstring>
+        <name>reason</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="65" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_linked_case_1a50664f570c0124e55cc27af761febda9" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.LinkedCase::date_time</definition>
+        <argsstring></argsstring>
+        <name>date_time</name>
+        <initializer>= models.DateTimeField(auto_now=True, null=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="66" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_linked_case_1a32571d398ae5e08555d092f36c9a587a" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.LinkedCase::removed</definition>
+        <argsstring></argsstring>
+        <name>removed</name>
+        <initializer>= models.BooleanField(default=False, blank=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="67" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="99">
+        <label>case.models.LinkedCase</label>
+        <link refid="classcase_1_1models_1_1_linked_case"/>
+        <childnode refid="100" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="101">
+        <label>case.models.LinkedCase</label>
+        <link refid="classcase_1_1models_1_1_linked_case"/>
+        <childnode refid="102" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="62" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="62" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classcase_1_1models_1_1_linked_case_1a50664f570c0124e55cc27af761febda9" prot="public" virt="non-virtual"><scope>case::models::LinkedCase</scope><name>date_time</name></member>
+      <member refid="classcase_1_1models_1_1_linked_case_1ac6c8444db0a5224ae1d482d42afedb24" prot="public" virt="non-virtual"><scope>case::models::LinkedCase</scope><name>id</name></member>
+      <member refid="classcase_1_1models_1_1_linked_case_1a8ac72b96a8da0c82442e6acd642ba194" prot="public" virt="non-virtual"><scope>case::models::LinkedCase</scope><name>reason</name></member>
+      <member refid="classcase_1_1models_1_1_linked_case_1a32571d398ae5e08555d092f36c9a587a" prot="public" virt="non-virtual"><scope>case::models::LinkedCase</scope><name>removed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

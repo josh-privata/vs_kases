@@ -1,0 +1,74 @@
+﻿{% extends "global/layout.html" %}
+
+<!-- Navigation -->
+{% block navigation %}
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="sidebar-toggle text-light mr-3"><i class="fa fa-fw fa-bars"></i></a>
+            <!-- Brand -->
+            <a class="navbar-brand mr-3" href="{% url 'home' %}"><i class="fa fa-book-open"></i>  Kases</a>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+
+                <!-- Nav -->
+                <ul class="navbar-nav mr-auto">
+                    <!-- Search -->
+                    <li class="nav-item {% block search_active %}{% endblock %}">
+                        <a class="nav-link"
+                            href="{% url 'home' %}">Search <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <!-- Cases -->
+                    <li class="nav-item {% block cases_active %}{% endblock %}">
+                        <a class="nav-link" href="{% url 'cases' %}">Cases</a>
+                    </li>
+                    <!-- Tasks -->
+                    <li class="nav-item {% block tasks_active %}{% endblock %}">
+                        <a class="nav-link" href="{% url 'tasks' %}">Tasks</a>
+                    </li>
+                    <!-- Evidence -->
+                    <li class="nav-item {% block evidence_active %}{% endblock %}">
+                        <a class="nav-link" href="{% url 'evidence' %}">Evidence</a>
+                    </li>
+                    <!-- Personality -->
+                    <li class="nav-item {% block personality_active %}{% endblock %}">
+                        <a class="nav-link" href="{% url 'personality' %}">Personality</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item {% block admin_active %}{% endblock %}">
+                        <a class="nav-link" href="{% url 'home' %}">Administration</a>
+                    </li>
+                </ul>
+
+                <!-- Login -->
+                <ul class="navbar-nav navbar-right">
+                    {% include 'registration/loginpartial.html' %}
+                </ul>
+            </div>
+        </nav>
+    </div>
+{% endblock %}
+
+<!-- Sidebar -->
+{% block sidebar %}
+    <div class="sidebar bg-dark">
+        <ul class="list-unstyled">
+
+            <!-- Sidebar 1 -- NEW ITEM -->
+            {% block sidebar_1 %}<li><a href="#"><i class="fa fa-fw fa-angle-right"></i> Sidebar Link</a></li>{% endblock %}
+            <!-- Sidebar 2  -- -->
+            {% block sidebar_2 %}<li><a href="#"><i class="fa fa-fw fa-angle-right"></i> Sidebar Link</a></li>{% endblock %}
+            <!-- Sidebar 3  -- -->
+            {% block sidebar_3 %}{% endblock %}
+            <!-- Sidebar 4 -->
+            {% block sidebar_4 %}{% endblock %}
+            <!-- Sidebar 5 -->
+            {% block sidebar_5 %}{% endblock %}
+            <!-- Sidebar 6 -->
+            {% block sidebar_6 %}{% endblock %}
+            <!-- Sidebar 7 -->
+            {% block sidebar_7 %}{% endblock %}
+            <!-- Sidebar 8 -->
+            {% block sidebar_8 %}{% endblock %}
+        </ul>
+    </div>
+{% endblock %}

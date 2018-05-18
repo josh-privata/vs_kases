@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+
+    <!-- Head -->
+    <head>
+        <!-- Tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        {% block meta_tags %}{% endblock %}
+
+        <!-- Title -->
+        <title>{% block title %}{% endblock %}</title>
+
+        <!-- Stylesheets -->
+        {% load staticfiles %}
+        {% block base_stylesheets %}
+        <link rel="stylesheet" type="text/css" href="{% static 'base/content/bootstrap.min.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'base/content/fontawesome.min.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'base/content/bsadmin.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'base/content/site.css' %}" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        {% endblock %}
+        {% block stylesheets %}{% endblock %}
+
+        <!-- Extra Head -->
+        {% block extrahead %}{% endblock %}
+    </head>
+
+    <!-- Body -->
+    <body class="{% block bodyclass %}{% endblock %}">
+
+        <!-- Default Page -->
+        {% block page %}
+
+            <!-- Navigation -->
+            {% block navigation %}{% endblock %}
+
+            <!-- Content -->
+            <div class="d-flex align-items-stretch">
+
+                <!-- Sidebar -->
+                {% block sidebar %}{% endblock %}
+
+                <!-- Main Content -->
+                <div class="content p-4">
+
+                    <!-- Breadcrumb-->
+                    <div class="breadcrumb-holder">
+                        <div class="container-fluid">
+                            <ul class="breadcrumb">
+                                {% block breadcrumb %}
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                {% endblock %}
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    {% block content %}{% endblock %}
+
+                    <!-- Extra Body -->
+                    {% block extrabody %}{% endblock %}
+                        
+                    <!-- Footer -->
+                    {% block footer %}
+                        <footer class="clearfix{% block footerclass %}{% endblock %}">
+                            <hr/>
+                            <p>&copy; {{ year }} - Kases by /privata/</p>
+                        </footer>
+                    {% endblock %}
+                </div>
+
+             </div>
+
+        {% endblock %}
+    
+    <!-- Scripts -->
+        {% block base_scripts %}
+            <script src="{% static 'base/scripts/jquery.min.js' %}"></script>
+            <script src="{% static 'base/scripts/opper.min.js' %}"></script>
+            <script src="{% static 'base/scripts/bootstrap.min.js' %}"></script>
+            <script src="{% static 'base/scripts/bsadmin.js' %}"></script>
+            <script src="{% static 'base/scripts/respond.min.js' %}"></script>
+            <script src="{% static 'base/scripts/modernizr-2.6.2.js' %}"></script>
+        {% endblock %}
+        {% block scripts %}{% endblock %}
+
+    </body>
+</html>

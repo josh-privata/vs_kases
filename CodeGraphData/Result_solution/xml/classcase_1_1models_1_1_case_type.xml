@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classcase_1_1models_1_1_case_type" kind="class" prot="public">
+    <compoundname>case::models::CaseType</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Model</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_type_1aaafe07b2f93c08a98012ce5d65bb7ffa" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.CaseType::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <initializer>= models.IntegerField(null=True, blank=True, default=&quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="50" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcase_1_1models_1_1_case_type_1a6e9221e02f830ce97a3686e14e417267" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple case.models.CaseType::case_type</definition>
+        <argsstring></argsstring>
+        <name>case_type</name>
+        <initializer>= models.CharField(max_length=250, blank=True, null=True, default=None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="51" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="48">
+        <label>case.models.CaseType</label>
+        <link refid="classcase_1_1models_1_1_case_type"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="50">
+        <label>case.models.CaseType</label>
+        <link refid="classcase_1_1models_1_1_case_type"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" line="48" column="1" bodyfile="//ml350/users$/josh/Documents/My Code/Django/Projects/vs_kases/Kases/case/models.py" bodystart="48" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classcase_1_1models_1_1_case_type_1a6e9221e02f830ce97a3686e14e417267" prot="public" virt="non-virtual"><scope>case::models::CaseType</scope><name>case_type</name></member>
+      <member refid="classcase_1_1models_1_1_case_type_1aaafe07b2f93c08a98012ce5d65bb7ffa" prot="public" virt="non-virtual"><scope>case::models::CaseType</scope><name>id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
