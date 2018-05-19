@@ -105,6 +105,13 @@
     <Compile Include="user\tests.py" />
     <Compile Include="user\views.py" />
     <Compile Include="user\__init__.py" />
+    <Compile Include="utils\admin.py" />
+    <Compile Include="utils\apps.py" />
+    <Compile Include="utils\migrations\__init__.py" />
+    <Compile Include="utils\models.py" />
+    <Compile Include="utils\tests.py" />
+    <Compile Include="utils\views.py" />
+    <Compile Include="utils\__init__.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app_template\" />
@@ -122,6 +129,9 @@
     <Folder Include="user\migrations\" />
     <Folder Include="user\templates\" />
     <Folder Include="user\templates\user\" />
+    <Folder Include="utils\" />
+    <Folder Include="utils\migrations\" />
+    <Folder Include="utils\templates\" />
     <Folder Include="\\ml350\users%24\josh\Documents\My Code\Django\Projects\vs_kases\Kases\templates\" />
     <Folder Include="case\" />
     <Folder Include="case\migrations\" />
@@ -226,6 +236,7 @@
     <Content Include="templates\registration\password_reset_form.html" />
     <Content Include="user\templates\user\index.html" />
     <Content Include="user\templates\user\profile.html" />
+    <Content Include="utils\templates\index.html" />
     <None Include="base\static\base\scripts\_references.js" />
     <Content Include="base\static\base\scripts\bootstrap.js" />
     <Content Include="base\static\base\scripts\bootstrap.min.js" />
