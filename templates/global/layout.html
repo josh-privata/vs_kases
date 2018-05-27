@@ -44,30 +44,17 @@
                 <!-- Main Content -->
                 <div class="content p-4">
 
-                    <!-- Breadcrumb-->
-                    <div class="breadcrumb-holder">
-                        <div class="container-fluid">
-                            <ul class="breadcrumb">
-                                {% block breadcrumb %}
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                {% endblock %}
-                            </ul>
-                        </div>
+                    <!-- Breadcrumb -->
+                    {% block breadcrumb %}{% endblock %}
 
-                    </div>
-
+                    <!-- Content -->
                     {% block content %}{% endblock %}
 
                     <!-- Extra Body -->
                     {% block extrabody %}{% endblock %}
                         
                     <!-- Footer -->
-                    {% block footer %}
-                        <footer class="clearfix{% block footerclass %}{% endblock %}">
-                            <hr/>
-                            <p>&copy; {{ year }} - Kases by /privata/</p>
-                        </footer>
-                    {% endblock %}
+                    {% block footer %}{% endblock %}
                 </div>
 
              </div>

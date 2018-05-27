@@ -42,24 +42,30 @@ class Common(Configuration):
 
     # Application definition
     INSTALLED_APPS = [
+        # Kases Apps
+        'utils',
         'base',
         'evidence',
         'case',
-        'personality',
+        'entity',
         'tasks',
         'user',
         'configuration',
-        # Add your apps here to enable them
+        'note',
+        # Django Apps
         'django.contrib.admin',
         'django.contrib.auth',
         'django.contrib.contenttypes',
         'django.contrib.sessions',
         'django.contrib.messages',
         'django.contrib.staticfiles',
+        # Additional Apps
         'django_tables2',
         'django_filters',
         'raven.contrib.django.raven_compat',
         'debug_toolbar',
+        'simple_history',
+        'crispy_forms',
     ]
 
     MIDDLEWARE = [
@@ -72,12 +78,13 @@ class Common(Configuration):
         'django.contrib.messages.middleware.MessageMiddleware',
         'django.middleware.clickjacking.XFrameOptionsMiddleware',
         'debug_toolbar.middleware.DebugToolbarMiddleware',
+        'simple_history.middleware.HistoryRequestMiddleware',
     ]
 
     ROOT_URLCONF = 'Kases.urls'
 
     DJANGO_TABLES2_TEMPLATE = 'django_tables2/bootstrap-responsive.html'
-
+    CRISPY_TEMPLATE_PACK = "bootstrap3"
     TEMPLATES = [
         {
             'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -136,7 +143,7 @@ class Common(Configuration):
     STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
     
 
-class SQLite():
+class LocalSQLite():
     # Database
     # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
@@ -148,7 +155,7 @@ class SQLite():
     }
 
 
-class MySql():
+class LocalMySql():
     # Database
     # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
@@ -163,6 +170,22 @@ class MySql():
             'USER': 'root',
             'PASSWORD': 'coffee',
             'HOST': '127.0.0.1',
+            'PORT': '3306',
+        }
+    }
+
+
+class RemoteMySql():
+    # Database
+    # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'kases',
+            'USER': 'root',
+            'PASSWORD': '21@coffee',
+            'HOST': '192.168.2.32',
             'PORT': '3306',
         }
     }
@@ -238,18 +261,12 @@ class Dev(Common, Log):
     # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
     DATABASES = {
-
-    #    'default': {
-    #        'ENGINE': 'django.db.backends.sqlite3',
-    #        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    #    }
-
         'default': {
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'kases',
             'USER': 'root',
-            'PASSWORD': 'coffee',
-            'HOST': '127.0.0.1',
+            'PASSWORD': '21@coffee',
+            'HOST': '192.168.2.32',
             'PORT': '3306',
         }
     }

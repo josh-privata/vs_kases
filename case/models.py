@@ -1,15 +1,19 @@
-## Case ##
+## Case Models ##
 
-# python imports
+## python imports
 from django.db import models
-from base.models import UploadModel
+from utils.models import ObjectDescriptionMixin
 from django.urls import reverse
 from django.conf import settings
 from django.utils.translation import ugettext_lazy as _
 #import case.managers as managers
+from simple_history.models import HistoricalRecords
+from note.models import Note
+from tasks.models import Task
 
 
-class CaseAuthorisationTypes(models.Model):
+## Admin Models
+class CaseAuthorisationType(ObjectDescriptionMixin):
     # General Fields
     title = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Classification")
 
@@ -23,39 +27,12 @@ class CaseAuthorisationTypes(models.Model):
 
     def __str__(self):
         return '%s' % self.title
-
-
-class CaseAuthorisation(models.Model):
-    # Choices
-    STATUS = {'AUTH': {'description': 'Authorised'},
-              'NOAUTH': {'description': 'Rejected'},
-              'PENDING': {'description': 'Pending'},}
-    
-    # General Fields
-    title = models.ForeignKey(CaseAuthorisationTypes, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Case Authorisation")
-    reason = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Reason For Authorisation")
-    date_time = models.DateTimeField(auto_now=True, null=True, verbose_name="Date")
-    # Linked Fields
-    authorised_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Authorised By")
-
-    class Meta:
-        ordering = ('id',)
-        verbose_name = _('Case Authorisation')
-        verbose_name_plural = _('Case Authorisations')
-
-    #def get_absolute_url(self):
-    #    return reverse('case_detail', kwargs={'pk': self.pk})
-
-    def __str__(self):
-        return '%s' % self.title
     
 
-class CaseClassification(models.Model):
+class CaseClassificationType(ObjectDescriptionMixin):
     # General Fields
     title = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Classification")
-    # Linked Fields
-    modified_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Modified By")
-
+    
     class Meta:
         ordering = ('id',)
         verbose_name = _('Case Classification')
@@ -68,12 +45,10 @@ class CaseClassification(models.Model):
         return '%s' % self.title
 
 
-class CaseType(models.Model):
+class CaseType(ObjectDescriptionMixin):
     # General Fields
     title = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Type")
-    # Linked Fields
-    modified_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Modified By")
-
+    
     class Meta:
         ordering = ('id',)
         verbose_name = _('Case Type')
@@ -86,13 +61,12 @@ class CaseType(models.Model):
         return '%s' % self.title
 
 
-class CasePriority(models.Model):
+class CasePriority(ObjectDescriptionMixin):
     # General Fields
     title = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Priority")
     colour = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Colour")
-    # Linked Fields
-    modified_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Modified By")
-
+    #action_delta_hours = models.IntegerField(blank=True, null=True, default=None, verbose_name="Action Delta Days")
+   
     class Meta:
         ordering = ('id',)
         verbose_name = _('Case Priority')
@@ -105,10 +79,25 @@ class CasePriority(models.Model):
         return '%s' % self.title
 
 
-class CaseStatusType(models.Model):
+class CaseCategory(ObjectDescriptionMixin):
+    # General Fields
+    title = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Category")
+    
+    class Meta:
+        ordering = ('id',)
+        verbose_name = _('Case Category')
+        verbose_name_plural = _('Case Categories')
+
+    #def get_absolute_url(self):
+    #    return reverse('case_detail', kwargs={'pk': self.pk})
+
+    def __str__(self):
+        return '%s' % self.title
+
+
+class CaseStatusType(ObjectDescriptionMixin):
     # General Fields
     title = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Status Type")
-    description = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Description")
 
     class Meta:
         ordering = ('id',)
@@ -122,28 +111,7 @@ class CaseStatusType(models.Model):
         return '%s' % self.title
 
 
-class CaseStatus(models.Model):
-    
-    # General Fields
-    date_time = models.DateTimeField(auto_now=True, null=True, verbose_name="Date")
-    reason = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Reason For Status")
-    # Linked Fields
-    title = models.ForeignKey(CaseStatusType, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Case Status")
-    modified_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="User")
-
-    class Meta:
-        ordering = ('id',)
-        verbose_name = _('Case Status')
-        verbose_name_plural = _('Case Status')
-
-    #def get_absolute_url(self):
-    #    return reverse('case_detail', kwargs={'pk': self.pk})
-
-    def __str__(self):
-        return '%s' % self.title.title
-
-
-class CaseStatusGroup(models.Model):
+class CaseStatusGroup(ObjectDescriptionMixin):
     ## Choices
     # CREATED = 'Created'
     # PENDING = 'Awaiting Authorisation'
@@ -161,8 +129,8 @@ class CaseStatusGroup(models.Model):
     # forensic_statuses = [OPEN]
     
     # General Fields
-    title = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Status Group")
-    description = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Description")
+    title = models.CharField(max_length=250, blank=True, null=True, default=None, 
+                             verbose_name="Case Status Group")
     # Linked Fields
     case_status = models.ManyToManyField(CaseStatusType, blank=True, verbose_name="Case Status")
 
@@ -178,71 +146,35 @@ class CaseStatusGroup(models.Model):
         return '%s' % self.title
 
 
-class CaseHistory(models.Model):
+## Main Models
+class Case(ObjectDescriptionMixin):
     # General Fields
+    id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Title")
+    #description= models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Description")
     reference = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Reference")
     background = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Background")
+    purpose = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Purpose")
     location = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Location")
-    description = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Description")
     brief = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Brief")
-    comment = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Comment")
     private = models.BooleanField(default=False, blank=True, verbose_name="Private")
-    creation_date = models.DateTimeField(auto_now=True, null=True, verbose_name="Creation Date")
-    deadline = models.DateTimeField(auto_now=True, null=True, verbose_name="Case Deadline")
-
-    class Meta:
-        ordering = ('id',)
-        verbose_name = _('Case History')
-        verbose_name_plural = _('Case Histories')
-
-    #def get_absolute_url(self):
-    #    return reverse('case_detail', kwargs={'pk': self.pk})
-
-    def __str__(self):
-        return '%s' % self.title
-
-
-class CaseImageUpload(UploadModel):
-    # General Fields
-    # Linked Fields
-    location = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Location")
-    uploaded_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Uploaded By")
-
-    class Meta:
-        ordering = ('id',)
-        verbose_name = _('Case Image Upload')
-        verbose_name_plural = _('Case Image Uploads')
-
-    #def get_absolute_url(self):
-    #    return reverse('case_detail', kwargs={'pk': self.pk})
-
-    def __str__(self):
-        return '%s' % self.location
-    
-
-class Case(models.Model):
-    # General Fields
-    title = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Title")
-    reference = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Reference")
-    background = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Background")
-    location = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Location")
-    description = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Description")
-    brief = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Case Brief")
-    comment = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Comment")
-    private = models.BooleanField(default=False, blank=True, verbose_name="Private")
-    creation_date = models.DateTimeField(auto_now=True, null=True, verbose_name="Creation Date")
     deadline = models.DateTimeField(auto_now_add=True, null=True, verbose_name="Case Deadline")
     slug = models.SlugField(blank=True, null=True, unique=True, verbose_name="Case Slug")
+    image_upload = models.FileField(blank=True, null=True, verbose_name="Case Image")
     # Linked Fields
-    assigned_to = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, blank=True, null=True, verbose_name="Assigned To")
     type = models.ForeignKey(CaseType, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Case Type")
-    status = models.ForeignKey(CaseStatus, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Case Status")
-    classification = models.ForeignKey(CaseClassification, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Case Classification")
+    status = models.ForeignKey(CaseStatusType, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Case Status")
+    classification = models.ForeignKey(CaseClassificationType, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Case Classification")
     priority = models.ForeignKey(CasePriority, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Case Priority")
-    authorisation = models.ForeignKey(CaseAuthorisation, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Case Authorisation")
-    image_upload = models.ForeignKey(CaseImageUpload, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Case Image Upload")
-
+    category = models.ForeignKey(CaseCategory, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Case Category")
+    authorisation = models.ForeignKey(CaseAuthorisationType, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Case Authorisation")
+    assigned_to = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='case_assigned_to', blank=True, verbose_name="Assigned To")
+    case_manager = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='case_manager', on_delete=models.CASCADE, blank=True, null=True, verbose_name="Case Manager")
+    #legal = models.ManyToManyField(Personality, on_delete=models.CASCADE, blank=True, null=True, verbose_name="Legal Advisor")
+    #client = models.ManyToManyField(Personality, on_delete=models.CASCADE, blank=True, null=True, verbose_name="Client")
+    assigned_by = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='case_assigned_by', on_delete=models.CASCADE, blank=True, null=True, verbose_name="Assigned By")
+    
+    history = HistoricalRecords()
     #manager = managers.CaseManager()
 
     class Meta:
@@ -259,9 +191,7 @@ class Case(models.Model):
     
     # Property Methods
     def _get_case(self):
-        """ A user-friendly Case ID, which is a combination of Case ID
-        and queue slug. This is generally used in e-mail subjects. """
-
+        """ A user-friendly Case ID, which is a combination of Case ID and queue slug. This is generally used in e-mail subjects. """
         return u"[%s]" % self.case_for_url
     case = property(_get_case)
 
@@ -271,9 +201,10 @@ class Case(models.Model):
     case_for_url = property(_get_case_for_url)  
     
     def _get_assigned_to(self):
-        """ Custom property to allow us to easily print 'Unassigned' if a
-        Case has no owner, or the users name if it's assigned. If the user
-        has a full name configured, we use that, otherwise their username. """
+        """
+        Custom property to allow us to easily print 'Unassigned' if a Case has no owner, or the users name if it's assigned.
+        If the user has a full name configured, we use that, otherwise their username.
+        """
         if not self.assigned_to:
             return _('Unassigned')
         else:
@@ -283,30 +214,51 @@ class Case(models.Model):
                 return self.assigned_to.get_username()
     get_assigned_to = property(_get_assigned_to)
 
-    #def _get_case_url(self):
-    #    """
-    #    Returns a publicly-viewable URL for this Case, used when giving
-    #    a URL to the submitter of a Case.
-    #    """
-    #    from django.contrib.sites.models import Site
-    #    from django.core.exceptions import ImproperlyConfigured
-    #    from django.urls import reverse
-    #    try:
-    #        site = Site.objects.get_current()
-    #    except ImproperlyConfigured:
-    #        site = Site(domain='configure-django-sites.com')
-    #    return u"http://%s%s/%s" % (
-    #        site.domain,
-    #        reverse('case:case_detail'),
-    #        self.case_for_url,
-    #    )
-    #case_url = property(_get_case_url)
 
-
-class LinkedCase(models.Model):
+## Data Models
+class LinkedCase(ObjectDescriptionMixin):
     # General Fields
     reason = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Reason For Link")
     date_time = models.DateTimeField(auto_now=True, null=True, verbose_name="Date")
     # Linked Fields
     linked_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="the")
     case = models.ManyToManyField(Case, blank=True, verbose_name="Case")
+
+
+class CaseTask(Task):
+    # Linked Fields
+    case = models.ForeignKey(Case, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Case")
+
+
+class CaseNote(Note):
+    # Linked Fields
+    case = models.ForeignKey(Case, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Case")
+
+
+class CaseLog(ObjectDescriptionMixin):
+    # General Fields
+    entry = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Log Entry")
+    # Linked Fields
+    case = models.ForeignKey(Case, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Case")
+
+    def __str__(self):
+        return '%s' % self.entry
+
+
+class CaseContact(ObjectDescriptionMixin):
+    # General Fields
+    reason = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Reason for Association")
+    # Linked Fields
+    #contact = models.ForeignKey(Personality, on_delete=models.CASCADE, blank=True, null=True, verbose_name="Contact")
+    case = models.ForeignKey(Case, on_delete=models.CASCADE, blank=True, null=True, verbose_name="Case")
+
+    class Meta:
+        ordering = ('id',)
+        verbose_name = _('Case Contact')
+        verbose_name_plural = _('Case Contacts')
+
+    #def get_absolute_url(self):
+    #    return reverse('case_detail', kwargs={'pk': self.pk})
+
+    def __str__(self):
+        return '%s' % self.title

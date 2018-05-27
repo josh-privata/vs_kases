@@ -5,7 +5,7 @@ import django_tables2 as tables
 
 
 class CaseTable(tables.Table):
-    view_entries = tables.TemplateColumn('<a href="{% url \'case_detail\' case.id %}">View</a>')
+    #view_entries = tables.TemplateColumn('<a href="{% url \'case_detail\' case.id %}">View</a>')
 
     class Meta:
         model = Case

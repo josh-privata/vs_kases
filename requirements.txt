@@ -28,6 +28,8 @@ django-filter
 django-digg-paginator
 django-debug-toolbar
 django-configurations
+django-simple-history
+django-crispy-forms
 #django-model-utils
 #django-vanilla-views
 #django-extensions

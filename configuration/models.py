@@ -1,7 +1,13 @@
+## Configuration Models ##
+
+# python imports
 from django.db import models
 
-# Configuration Models
+## Admin Models
 
+## Main Models
+
+## Data Models
 class Options(models.Model):
 
     CASE_NAME_OPTIONS = ['NumericIncrement', 'DateNumericIncrement', 'FromList']

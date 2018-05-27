@@ -6,7 +6,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="sidebar-toggle text-light mr-3"><i class="fa fa-fw fa-bars"></i></a>
             <!-- Brand -->
-            <a class="navbar-brand mr-3" href="{% url 'home' %}"><i class="fa fa-book-open"></i>  Kases</a>
+            <a class="navbar-brand mr-3" href="{% url 'home' %}"><i class="fa fa-book-open"></i>Kases</a>
             <div class="navbar-collapse collapse" id="navbarSupportedContent">
 
                 <!-- Nav -->
@@ -14,26 +14,14 @@
                     <!-- Search -->
                     <li class="nav-item {% block search_active %}{% endblock %}">
                         <a class="nav-link"
-                            href="{% url 'home' %}">Search <span class="sr-only">(current)</span>
+                            href="{% url 'home' %}">Global Search<span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <!-- Cases -->
-                    <li class="nav-item {% block cases_active %}{% endblock %}">
-                        <a class="nav-link" href="{% url 'cases' %}">Cases</a>
-                    </li>
-                    <!-- Tasks -->
-                    <li class="nav-item {% block tasks_active %}{% endblock %}">
-                        <a class="nav-link" href="{% url 'tasks' %}">Tasks</a>
-                    </li>
-                    <!-- Evidence -->
+                    <!-- Knowledge Base -->
                     <li class="nav-item {% block evidence_active %}{% endblock %}">
-                        <a class="nav-link" href="{% url 'evidence' %}">Evidence</a>
+                        <a class="nav-link" href="{% url 'evidence' %}">Knowledge Base</a>
                     </li>
-                    <!-- Personality -->
-                    <li class="nav-item {% block personality_active %}{% endblock %}">
-                        <a class="nav-link" href="{% url 'personality' %}">Personality</a>
-                    </li>
-                    <!-- Dropdown -->
+                    <!-- Administration -->
                     <li class="nav-item {% block admin_active %}{% endblock %}">
                         <a class="nav-link" href="{% url 'home' %}">Administration</a>
                     </li>
@@ -53,22 +41,46 @@
     <div class="sidebar bg-dark">
         <ul class="list-unstyled">
 
-            <!-- Sidebar 1 -- NEW ITEM -->
-            {% block sidebar_1 %}<li><a href="#"><i class="fa fa-fw fa-angle-right"></i> Sidebar Link</a></li>{% endblock %}
+            <!-- Sidebar 1 - Dashboard -->
+                {% block sidebar_1 %}<li><a href="{% url 'home' %}"><i class="fa fa-fw fa-home"></i> Dashboard</a></li>{% endblock %}
             <!-- Sidebar 2  -- -->
-            {% block sidebar_2 %}<li><a href="#"><i class="fa fa-fw fa-angle-right"></i> Sidebar Link</a></li>{% endblock %}
+                {% block sidebar_2 %}<li><a href="{% url 'case_create' %}"><i class="fa fa-fw fa-plus"></i> New Case</a></li>{% endblock %}
             <!-- Sidebar 3  -- -->
-            {% block sidebar_3 %}{% endblock %}
+                {% block sidebar_3 %}<li><a href="{% url 'case_list' %}"><i class="fa fa-fw fa-plus"></i> Open Case</a></li>{% endblock %}
             <!-- Sidebar 4 -->
-            {% block sidebar_4 %}{% endblock %}
+                {% block sidebar_4 %}{% endblock %}
             <!-- Sidebar 5 -->
-            {% block sidebar_5 %}{% endblock %}
+                {% block sidebar_5 %}{% endblock %}
             <!-- Sidebar 6 -->
-            {% block sidebar_6 %}{% endblock %}
+                {% block sidebar_6 %}{% endblock %}
             <!-- Sidebar 7 -->
-            {% block sidebar_7 %}{% endblock %}
+                {% block sidebar_7 %}{% endblock %}
             <!-- Sidebar 8 -->
-            {% block sidebar_8 %}{% endblock %}
+                {% block sidebar_8 %}{% endblock %}
+            <!-- Sidebar 9 -->
+                {% block sidebar_9 %}{% endblock %}
+            <!-- Sidebar 10 -->
+                {% block sidebar_10 %}{% endblock %}
+            <!-- Sidebar 11 -->
+                {% block sidebar_11 %}{% endblock %}
+            <!-- Sidebar 12 -->
+                {% block sidebar_12 %}{% endblock %}
+            <!-- Sidebar 13 -->
+                {% block sidebar_13 %}{% endblock %}
+            <!-- Sidebar 14 -->
+                {% block sidebar_14 %}{% endblock %}
+            <!-- Sidebar 15 -->
+                {% block sidebar_15 %}{% endblock %}
+            <!-- Sidebar 16 -->
+                {% block sidebar_16 %}{% endblock %}
+            <!-- Sidebar 17 -->
+                {% block sidebar_17 %}{% endblock %}
+            <!-- Sidebar 18 -->
+                {% block sidebar_18 %}{% endblock %}
+            <!-- Sidebar 19 -->
+                {% block sidebar_19 %}{% endblock %}
+            <!-- Sidebar 20 - Search -->
+                {% block sidebar_20 %}{% endblock %}
         </ul>
     </div>
 {% endblock %}

@@ -1,120 +1,168 @@
-## Tasks ##
+## Task Models ##
 
-# python imports
+## python imports
 from django.db import models
-from case.models import Case
-from evidence.models import Evidence
+from utils.models import ObjectDescriptionMixin
+from django.urls import reverse
+from django.conf import settings
+from django.utils.translation import ugettext_lazy as _
+#import task.managers as managers
+from simple_history.models import HistoricalRecords
 
 
+## Admin Models
+class TaskAuthorisationType(ObjectDescriptionMixin):
+    # General Fields
+    title = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Task Classification")
 
-class TaskStatus(models.Model):
-    # Choices
-    CREATED = 'CR'
-    QUEUED = 'QU'
-    ALLOCATED = 'AL'
-    PROGRESS = 'FP'
-    QA = 'QA'
-    DELIVERY = 'DE'
-    COMPLETE = 'CO'
-    CLOSED = 'CL'
+    class Meta:
+        ordering = ('id',)
+        verbose_name = _('Task Classification')
+        verbose_name_plural = _('Task Classifications')
 
-    CHOICES = ((CREATED, 'Created'),
-                (QUEUED, 'Queued'),
-                (ALLOCATED, 'Allocated'),
-                (PROGRESS, 'Forensics in Process'),
-                (QA, 'QA'), (DELIVERY, 'Delivery'),
-                (COMPLETE, 'Complete'),
-                (CLOSED, 'Closed'),)
+    #def get_absolute_url(self):
+    #    return reverse('Task_detail', kwargs={'pk': self.pk})
 
-    # Choice Groups
-    openStatuses = [CREATED, QUEUED, ALLOCATED, PROGRESS, QA, DELIVERY]
-    beAssigned = [QUEUED, ALLOCATED, PROGRESS, QA]
-    preInvestigation = [QUEUED, ALLOCATED]
-    notesAllowed = [ALLOCATED, PROGRESS, QA, DELIVERY, COMPLETE]
-    qaComplete = [DELIVERY, COMPLETE, CLOSED]
-    closedStatuses = [COMPLETE, CLOSED]
-    invRoles = [ALLOCATED, PROGRESS, DELIVERY, COMPLETE]
-    qaRoles = [QA]
-    workerRoles = [ALLOCATED, PROGRESS, QA, DELIVERY, COMPLETE]
-    all_statuses = [CREATED, QUEUED, ALLOCATED, PROGRESS, QA, DELIVERY, COMPLETE, CLOSED]
+    def __str__(self):
+        return '%s' % self.title
     
+
+class TaskClassificationType(ObjectDescriptionMixin):
     # General Fields
-    date_time = models.DateTimeField(auto_now=True, null=True, verbose_name="Date")
-    task_status = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Task Status")
-    reason = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Reason For Status")
-    # Linked Fields
-    #user = models.ForeignKey(User, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="User")
-
-
-class TaskType(models.Model):
-    # General Fields
-    task_type = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Task Type")
-    # Linked Fields
-
- 
-class TaskCategory(models.Model):
-    # General Fields
-    task_category = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Task Category")
-
-
-class TaskAuthorisation(models.Model):
-    # Choices
-    STATUS = {'AUTH': {'description': 'Authorised'},
-              'NOAUTH': {'description': 'Rejected'},
-              'PENDING': {'description': 'Pending'},}
+    title = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Task Classification")
     
-    # General Fields
-    task_authorisation = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Authorisation Status")
-    reason = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Reason For Authorisation")
-    date_time = models.DateTimeField(auto_now=True, null=True, verbose_name="Date")
-    # Linked Fields
-    #authoriser = models.ForeignKey(User, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="the")
+    class Meta:
+        ordering = ('id',)
+        verbose_name = _('Task Classification')
+        verbose_name_plural = _('Task Classifications')
+
+    #def get_absolute_url(self):
+    #    return reverse('Task_detail', kwargs={'pk': self.pk})
+
+    def __str__(self):
+        return '%s' % self.title
 
 
-class TaskPriority(models.Model):
+class TaskType(ObjectDescriptionMixin):
     # General Fields
-    task_priority = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Task Priority")
+    title = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Task Type")
+    
+    class Meta:
+        ordering = ('id',)
+        verbose_name = _('Task Type')
+        verbose_name_plural = _('Task Types')
+
+    #def get_absolute_url(self):
+    #    return reverse('Task_detail', kwargs={'pk': self.pk})
+
+    def __str__(self):
+        return '%s' % self.title
+
+
+class TaskPriority(ObjectDescriptionMixin):
+    # General Fields
+    title = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Task Priority")
     colour = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Colour")
+    #action_delta_hours = models.IntegerField(blank=True, null=True, default=None, verbose_name="Action Delta Days")
+   
+    class Meta:
+        ordering = ('id',)
+        verbose_name = _('Task Priority')
+        verbose_name_plural = _('Task Priorities')
+
+    #def get_absolute_url(self):
+    #    return reverse('Task_detail', kwargs={'pk': self.pk})
+
+    def __str__(self):
+        return '%s' % self.title
 
 
-class TaskNotes(models.Model):
+class TaskCategory(ObjectDescriptionMixin):
     # General Fields
-    date_time = models.DateTimeField(auto_now=True, null=True, verbose_name="Date")
-    task_note = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Task Note")
-    note_hash = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Note Hash")
+    title = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Task Category")
+    
+    class Meta:
+        ordering = ('id',)
+        verbose_name = _('Task Category')
+        verbose_name_plural = _('Task Categories')
+
+    #def get_absolute_url(self):
+    #    return reverse('task_detail', kwargs={'pk': self.pk})
+
+    def __str__(self):
+        return '%s' % self.title
+
+
+class TaskStatusType(ObjectDescriptionMixin):
+    # General Fields
+    title = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Task Status Type")
+
+    class Meta:
+        ordering = ('id',)
+        verbose_name = _('Task Status Type')
+        verbose_name_plural = _('Task Status Types')
+
+    #def get_absolute_url(self):
+    #    return reverse('Task_detail', kwargs={'pk': self.pk})
+
+    def __str__(self):
+        return '%s' % self.title
+
+
+class TaskStatusGroup(ObjectDescriptionMixin):
+    ## Choices
+    # CREATED = 'Created'
+    # PENDING = 'Awaiting Authorisation'
+    # REJECTED = 'Rejected'
+    # OPEN = 'Open'
+    # Active = 'Active'
+    # CLOSED = 'Closed'
+    # ARCHIVED = 'Archived'
+    ## Choice Groups
+    # closedStatuses = [CLOSED, ARCHIVED]
+    # all_statuses = [CREATED, OPEN, CLOSED, ARCHIVED, PENDING, REJECTED]
+    # approved_statuses = [CREATED, OPEN, CLOSED, ARCHIVED]
+    # active_statuses = [CREATED, PENDING, REJECTED, OPEN]
+    # workable_statuses = [CREATED, OPEN]
+    # forensic_statuses = [OPEN]
+    
+    # General Fields
+    title = models.CharField(max_length=250, blank=True, null=True, default=None, 
+                             verbose_name="Task Status Group")
     # Linked Fields
-    #author = models.ForeignKey(User, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="the")
+    Task_status = models.ManyToManyField(TaskStatusType, blank=True, verbose_name="Task Status")
+
+    class Meta:
+        ordering = ('id',)
+        verbose_name = _('Task Status Group')
+        verbose_name_plural = _('Task Status Groups')
+
+    #def get_absolute_url(self):
+    #    return reverse('Task_detail', kwargs={'pk': self.pk})
+
+    def __str__(self):
+        return '%s' % self.title
 
 
-class TaskHistory(models.Model):
+## Main Models
+class Task(ObjectDescriptionMixin):
     # General Fields
-    task_title = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Task Title")
+    title = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Task Title")
     background = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Task Background")
     location = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Task Location")
     creation_date = models.DateTimeField(auto_now=True, null=True, verbose_name="Creation Date")
     deadline = models.DateTimeField(auto_now=True, null=True, verbose_name="Deadline")
-
-
-class Task(models.Model):
-    # General Fields
-    task_title = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Task Title")
-    background = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Task Background")
-    location = models.CharField(max_length=250, blank=True, null=True, default=None, verbose_name="Task Location")
-    creation_date = models.DateTimeField(auto_now=True, null=True, verbose_name="Creation Date")
-    deadline = models.DateTimeField(auto_now=True, null=True, verbose_name="Deadline")
+    private = models.BooleanField(default=False, blank=True, verbose_name="Private")
     # Linked Fields
     type = models.ForeignKey(TaskType, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Task Type")
-    status = models.ForeignKey(TaskStatus, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Task Status")
-    category = models.ForeignKey(TaskCategory, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Task Category")
-    notes = models.ForeignKey(TaskNotes, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Task Notes")
+    status = models.ForeignKey(TaskStatusType, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Task Status")
+    classification = models.ForeignKey(TaskClassificationType, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Task Classification")
     priority = models.ForeignKey(TaskPriority, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Task Priority")
-    authorisation = models.ForeignKey(TaskAuthorisation, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Task Authorisation")
+    category = models.ForeignKey(TaskCategory, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Task Category")
+    authorisation = models.ForeignKey(TaskAuthorisationType, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Task Authorisation")
+    assigned_to = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='task_assigned_to', blank=True, verbose_name="Assigned To")
+    task_manager = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='task_manager', on_delete=models.CASCADE, blank=True, null=True, verbose_name="Case Manager")
+    assigned_by = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='task_assigned_by', on_delete=models.CASCADE, blank=True, null=True, verbose_name="Assigned By")
     
-class CaseTask(Task):
-    # Linked Fields
-    case = models.ForeignKey(Case, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Case")
 
-class EvidenceTask(Task):
-    # Linked Fields
-    evidence = models.ForeignKey(Evidence, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Evidence")
-
+## Data Models
